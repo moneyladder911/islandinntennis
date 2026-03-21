@@ -6,28 +6,28 @@ const SchedulePreview: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="bg-forest py-24 border-y border-white/5 relative overflow-hidden text-center">
+    <section className="bg-forest py-16 border-y border-white/5 relative overflow-hidden text-center">
       <div className="absolute inset-0 bg-[url('/island-inn-real.webp')] opacity-10 mix-blend-overlay bg-cover bg-center" />
       <div className="absolute inset-0 bg-gradient-to-t from-forest/80 to-transparent" />
       
       <div className="container relative z-10 px-8 max-w-[800px] mx-auto">
         {/* Stats Bar Integrated */}
-        <div className="flex justify-center gap-12 sm:gap-20 flex-wrap mb-24 pb-16 border-b border-white/10">
+        <div className="flex justify-center gap-8 sm:gap-16 flex-wrap mb-12 pb-12 border-b border-white/10">
           <div className="text-center">
-            <div className="serif text-[42px] font-semibold text-gold leading-none">3</div>
-            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Courts Available</div>
+            <div className="serif text-[38px] md:text-[42px] font-semibold text-gold leading-none">3</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-2">Courts</div>
           </div>
           <div className="text-center">
-            <div className="serif text-[42px] font-semibold text-gold leading-none">All</div>
-            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Skill Levels</div>
+            <div className="serif text-[38px] md:text-[42px] font-semibold text-gold leading-none">All</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-2">Levels</div>
           </div>
           <div className="text-center">
-            <div className="serif text-[42px] font-semibold text-gold leading-none">Pro</div>
-            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Instruction</div>
+            <div className="serif text-[38px] md:text-[42px] font-semibold text-gold leading-none">Pro</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-2">Coaching</div>
           </div>
           <div className="text-center">
-            <div className="serif text-[42px] font-semibold text-gold leading-none">MV</div>
-            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Island Life</div>
+            <div className="serif text-[38px] md:text-[42px] font-semibold text-gold leading-none">MV</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-2">Tennis Life</div>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ const SchedulePreview: React.FC = () => {
           <h2 className="serif text-[clamp(32px,5vw,48px)] font-light text-white leading-tight mb-6">
             Matches Run <em className="italic text-gold font-normal">All Day</em>, Every Day
           </h2>
-          <p className="text-white/60 font-light text-[15px] leading-[1.8] mb-10 mx-auto max-w-lg">
+          <p className="text-white/60 font-light text-[15px] leading-[1.8] mb-8 mx-auto max-w-lg">
             From morning clinics to evening social play — we have something for every level. There's always a match waiting for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
