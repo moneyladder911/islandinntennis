@@ -108,14 +108,14 @@ const Hero: React.FC = () => {
               className="bg-white text-[#163020] px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white hover:bg-transparent hover:text-white transition-all duration-300 no-underline"
               style={{ minWidth: '280px' }}
             >
-              Text Kim To Play
+              TEXT TO PLAY
             </a>
             <Link 
               to="/pricing" 
               className="bg-transparent text-white px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white/30 hover:bg-white hover:text-[#163020] transition-all duration-300 no-underline"
               style={{ minWidth: '280px' }}
             >
-              View Memberships
+              START YOUR MATCH
             </Link>
           </div>
 
