@@ -23,7 +23,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {/* Desktop Text Kim Float */}
         <div className="hidden md:block fixed bottom-10 right-10 z-[1001]">
           <a 
-            href="sms:+15089393030"
+            href="sms:+14079239047"
             className="flex items-center gap-4 text-white px-6 py-4 rounded-full font-bold shadow-2xl hover:-translate-y-2 transition-transform group no-underline"
             style={{ backgroundColor: '#b56c4d' }}
           >
@@ -49,14 +49,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         }}
       >
         <a 
-          href="tel:15086932002" 
+          href="tel:+14079239047" 
           className="flex-grow flex items-center justify-center gap-3 text-white text-[11px] tracking-[3px] font-bold py-5 rounded-sm no-underline uppercase outline-none"
           style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
         >
           <Phone size={14} className="text-gold" fill="rgba(179, 147, 89, 0.5)" /> Call
         </a>
         <a 
-          href="sms:+15089393030"
+          href="sms:+14079239047"
           className="flex-grow flex items-center justify-center gap-3 text-white text-[11px] tracking-[3px] font-bold py-5 rounded-sm shadow-xl no-underline uppercase outline-none"
           style={{ backgroundColor: '#b56c4d' }}
         >

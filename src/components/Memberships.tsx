@@ -7,7 +7,7 @@ const Memberships: React.FC = () => {
   const plans = [
     {
       name: "Early Bird",
-      price: "600",
+      price: "599",
       tag: "Seasonal Opening Special",
       icon: <Zap className="text-gold" />,
       features: [
@@ -92,7 +92,7 @@ const Memberships: React.FC = () => {
               </ul>
 
               <a 
-                href="sms:+15089393030"
+                href="sms:+14079239047"
                 className={`w-full py-5 text-[11px] font-bold tracking-[3px] uppercase no-underline rounded-sm transition-all duration-300 font-body ${
                   plan.highlight ? 'bg-[#163020] text-white hover:bg-[#c96b3a] shadow-xl' : 'bg-gold/90 text-forest hover:bg-white hover:text-forest'
                 }`}

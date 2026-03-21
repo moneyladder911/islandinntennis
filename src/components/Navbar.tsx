@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
             </Link>
           ))}
           <a 
-            href="sms:+15089393030" 
+            href="sms:+14079239047" 
             style={{ 
               backgroundColor: '#b56c4d', 
               color: 'white', 
@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
           </Link>
         ))}
         <a 
-          href="sms:+15089393030" 
+          href="sms:+14079239047" 
           style={{ 
             backgroundColor: '#b56c4d', 
             color: 'white', 

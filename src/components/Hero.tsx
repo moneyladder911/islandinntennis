@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-24">
             <a 
-              href="sms:+15089393030" 
+              href="sms:+14079239047" 
               className="bg-white text-[#163020] px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white hover:bg-transparent hover:text-white transition-all duration-300 no-underline"
               style={{ minWidth: '280px' }}
             >

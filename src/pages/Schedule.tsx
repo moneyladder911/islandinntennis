@@ -84,7 +84,7 @@ const SchedulePage: React.FC = () => {
               <div>
                 <div className="w-12 h-12 rounded-full bg-forest/5 text-forest flex items-center justify-center mx-auto mb-5 text-lg font-bold">1</div>
                 <h4 className="font-bold text-sm text-forest mb-2 uppercase tracking-[1px]">Text Kim</h4>
-                <p className="text-[13px] font-light text-light leading-relaxed">Send a text to +1 (508) 939-3030 with your level and when you'd like to play.</p>
+                <p className="text-[13px] font-light text-light leading-relaxed">Send a text to +1 (407) 923-9047 with your level and when you'd like to play.</p>
               </div>
               <div>
                 <div className="w-12 h-12 rounded-full bg-forest/5 text-forest flex items-center justify-center mx-auto mb-5 text-lg font-bold">2</div>
@@ -118,14 +118,14 @@ const SchedulePage: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="sms:+15089393030"
+                  href="sms:+14079239047"
                   className="flex items-center gap-3 px-8 py-4 bg-gold/20 border border-gold/40 text-gold rounded-sm hover:bg-gold hover:text-forest transition-all text-[11px] font-bold tracking-[2px] uppercase"
                 >
                   <MessageCircle size={16} />
                   Text Kim
                 </a>
                 <a
-                  href="tel:+15089393030"
+                  href="tel:+14079239047"
                   className="flex items-center gap-3 px-8 py-4 bg-transparent border border-white/20 text-white/80 rounded-sm hover:bg-white/10 transition-all text-[11px] font-bold tracking-[2px] uppercase"
                 >
                   <Phone size={16} />

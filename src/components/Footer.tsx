@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           <div className="flex gap-6 mt-2">
             <a href="https://www.instagram.com/islandinntennismv/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Instagram size={18} /></a>
             <a href="https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Facebook size={18} /></a>
-            <a href="sms:+15089393030" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><MessageSquare size={18} /></a>
+            <a href="sms:+14079239047" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><MessageSquare size={18} /></a>
           </div>
         </div>
 
@@ -95,13 +95,13 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex gap-4 text-[13px] font-light text-white/40 group">
               <Phone size={16} className="text-gold/60 shrink-0 group-hover:text-gold transition-colors" />
-              <a href="tel:15086932002" className="hover:text-white no-underline color-inherit transition-all">(508) 693-2002</a>
+              <a href="tel:+14079239047" className="hover:text-white no-underline color-inherit transition-all">+1 (407) 923-9047</a>
             </li>
             <li className="flex gap-4 items-center">
               <div className="w-8 h-8 rounded-full bg-clay/10 flex items-center justify-center">
                 <MessageSquare size={14} className="text-clay" />
               </div>
-              <a href="sms:+15089393030" className="text-[11px] font-bold uppercase tracking-[2px] text-clay hover:text-white transition-all no-underline">Text Kim</a>
+              <a href="sms:+14079239047" className="text-[11px] font-bold uppercase tracking-[2px] text-clay hover:text-white transition-all no-underline">Text Kim</a>
             </li>
           </ul>
         </div>

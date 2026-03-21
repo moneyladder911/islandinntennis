@@ -3,7 +3,7 @@ import { Phone, Instagram, Facebook, MapPin, MessageSquare, ChevronDown } from '
 
 const Contact: React.FC = () => {
   const contactMethods = [
-    { icon: <MessageSquare size={20} />, title: 'Text Kim - Fastest Way', value: '+1 (508) 939-3030', note: 'Text Kim directly - fast response', link: 'sms:+15089393030' },
+    { icon: <MessageSquare size={20} />, title: 'Text Kim - Fastest Way', value: '+1 (407) 923-9047', note: 'Text Kim directly - fast response', link: 'sms:+14079239047' },
     { icon: <Instagram size={20} />, title: 'Instagram', value: '@islandinntennismv', note: 'Photos, updates and island vibes', link: 'https://www.instagram.com/islandinntennismv/' },
     { icon: <Facebook size={20} />, title: 'Facebook', value: 'Island Inn Tennis Club', note: 'Events, community and news', link: 'https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/' },
     { icon: <MapPin size={20} />, title: 'Location', value: '30 Island Inn Road', note: 'Oak Bluffs, MA 02557 - Behind Nomans Restaurant', link: "https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" },

@@ -82,7 +82,7 @@ const Terms: React.FC = () => {
           <div className="mt-20 p-12 bg-forest text-white rounded-sm text-center">
             <h4 className="serif text-3xl mb-6 font-light">Questions regarding our policies?</h4>
             <p className="text-white/60 mb-8 max-w-lg mx-auto font-light">We value transparency. If you need clarification on any terms, please reach out to Kim directly.</p>
-            <a href="sms:+15089393030" className="btn btn-primary px-10 border-none">Text Kim Directly</a>
+            <a href="sms:+14079239047" className="btn btn-primary px-10 border-none">Text Kim Directly</a>
           </div>
         </div>
       </section>

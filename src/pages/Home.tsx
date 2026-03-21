@@ -48,8 +48,7 @@ const Home: React.FC = () => {
             </p>
             <div className="space-y-4 mb-12">
                <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest">30 Island Inn Rd, Oak Bluffs, MA 02557</div>
-               <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest">(508) 693-2002</div>
-               <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest text-gold">Fastest: Text +1 (508) 939-3030</div>
+               <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest text-gold">Text or Call Kim: +1 (407) 923-9047</div>
             </div>
             <a href="https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10">
               Get Directions

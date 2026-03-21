@@ -145,7 +145,7 @@ const PricingPage: React.FC = () => {
                 </div>
 
                 <a 
-                  href={`sms:+15089393030&body=Hi Kim, I'm interested in the ${tier.title}!`}
+                  href={`sms:+14079239047&body=Hi Kim, I'm interested in the ${tier.title}!`}
                   className={`btn w-full leading-none no-underline ${
                     tier.popular ? 'bg-gold text-forest hover:bg-white' : 'bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white'
                   }`}
@@ -195,7 +195,7 @@ const PricingPage: React.FC = () => {
           <div className="mt-20 text-center bg-[#fdfaf5] p-14 lg:p-20 rounded-sm border border-forest/5 max-w-4xl mx-auto shadow-sm">
             <h4 className="serif text-4xl text-forest mb-6 font-light">Looking for something specific?</h4>
             <p className="text-light text-lg font-light mb-12 max-w-sm mx-auto">Custom multi-family packages and season-long rates are available upon request.</p>
-            <a href="sms:+15089393030" className="btn btn-outline !border-forest !text-forest px-12 py-5 hover:bg-forest hover:!text-white no-underline text-xs tracking-[3px]">Inquire for Custom Quote</a>
+            <a href="sms:+14079239047" className="btn btn-outline !border-forest !text-forest px-12 py-5 hover:bg-forest hover:!text-white no-underline text-xs tracking-[3px]">Inquire for Custom Quote</a>
           </div>
         </div>
       </section>
