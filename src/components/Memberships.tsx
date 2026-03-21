@@ -3,7 +3,11 @@ import { Check, Star, Users, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const Memberships: React.FC = () => {
+interface MembershipsProps {
+  isPreview?: boolean;
+}
+
+const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
   const plans = [
     {
       name: "Early Bird",
@@ -115,11 +119,13 @@ const Memberships: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <Link to="/pricing" className="text-[11px] font-bold tracking-[3px] uppercase text-clay hover:text-forest transition-colors no-underline border-b border-clay/30 hover:border-forest pb-1">
-            Learn More About Pricing &rarr;
-          </Link>
-        </div>
+        {isPreview && (
+          <div className="mt-12 text-center">
+            <Link to="/pricing" className="text-[11px] font-bold tracking-[3px] uppercase text-clay hover:text-forest transition-colors no-underline border-b border-clay/30 hover:border-forest pb-1">
+              Learn More About Pricing &rarr;
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

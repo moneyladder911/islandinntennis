@@ -29,7 +29,7 @@ const Home: React.FC = () => {
       <SchedulePreview />
 
       {/* 5. Summer Memberships (Costs) */}
-      <Memberships />
+      <Memberships isPreview={true} />
 
       {/* 6. Programs Section */}
       <Programs isPreview={true} showPage={showPage} />

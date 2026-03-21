@@ -1,13 +1,11 @@
 import React from 'react';
-import { Instagram, Facebook, MapPin, Phone, ArrowUp, Send, MessageSquare } from 'lucide-react';
+import { Instagram, Facebook, MapPin, Phone, Send, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+
 
   return (
     <footer className="bg-[#0d1a12] text-white pt-16 pb-24 md:pb-10 relative overflow-hidden border-t border-white/5">
@@ -111,12 +109,10 @@ const Footer: React.FC = () => {
         <p className="text-[9px] font-medium tracking-[2px] uppercase text-white/20 text-center md:text-left">
           &copy; {currentYear} Island Inn Tennis Club · <Link to="/terms" className="hover:text-gold text-white/20 no-underline">Terms & Policies</Link>
         </p>
-        <button 
-          onClick={scrollToTop}
-          className="bg-white/5 p-3 rounded-full text-white/20 hover:text-gold hover:bg-white/10 transition-all cursor-pointer border-none"
-        >
-          <ArrowUp size={16} />
-        </button>
+        <div className="text-[9px] font-bold tracking-[3px] uppercase text-gold/80">
+          Made by Onyx Atelier
+        </div>
+        {/* Removed Back to Top button as requested */}
       </div>
     </footer>
   );
