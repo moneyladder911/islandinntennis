@@ -4,7 +4,6 @@ import Intro from '../components/Intro';
 import Programs from '../components/Programs';
 import Reviews from '../components/Reviews';
 import Memberships from '../components/Memberships';
-import MeetKim from '../components/MeetKim';
 import SchedulePreview from '../components/SchedulePreview';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -23,9 +22,6 @@ const Home: React.FC = () => {
       
       {/* 2. Intro: Tennis at the Heart */}
       <Intro showPage={showPage} />
-
-      {/* 3. About Us snippet with Kim's Picture */}
-      <MeetKim />
 
 
 
