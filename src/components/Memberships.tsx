@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, Star, Users, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Memberships: React.FC = () => {
   const plans = [
@@ -112,6 +113,12 @@ const Memberships: React.FC = () => {
              <h4 className="serif text-2xl font-light mb-2">Member Benefit No. 2</h4>
              <p className="text-forest/60 text-sm font-light leading-relaxed">Rent the court for <em className="text-clay italic font-normal">Your Private Game</em> any time our Pro clinics aren't in session.</p>
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link to="/pricing" className="text-[11px] font-bold tracking-[3px] uppercase text-clay hover:text-forest transition-colors no-underline border-b border-clay/30 hover:border-forest pb-1">
+            Learn More About Pricing &rarr;
+          </Link>
         </div>
       </div>
     </section>
