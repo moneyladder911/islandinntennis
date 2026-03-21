@@ -85,7 +85,9 @@ const Hero: React.FC = () => {
               alignItems: 'center',
               flexWrap: 'wrap',
               justifyContent: 'center',
-              gap: '12px'
+              rowGap: '2px',
+              columnGap: '12px',
+              lineHeight: '1.2'
             }}
           >
             Play the 
