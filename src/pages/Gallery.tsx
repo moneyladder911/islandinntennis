@@ -57,7 +57,7 @@ const GalleryPage: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative group bg - white overflow - hidden rounded - sm shadow - premium ${ img.span } `}
+                className={`relative group bg-white overflow-hidden rounded-sm shadow-premium ${img.span}`}
               >
                 {img.url ? (
                   <img 
