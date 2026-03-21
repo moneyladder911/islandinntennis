@@ -11,7 +11,7 @@ const ProgramsPage: React.FC = () => {
       transition={{ duration: 0.8 }}
     >
       <section 
-        className="pt-40 pb-20 text-center relative overflow-hidden flex items-center justify-center px-10"
+        className="pt-32 pb-12 text-center relative overflow-hidden flex items-center justify-center px-10"
         style={{ backgroundColor: '#163020' }}
       >
         <div 

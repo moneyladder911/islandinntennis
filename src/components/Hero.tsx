@@ -46,14 +46,14 @@ const Hero: React.FC = () => {
           <div 
             style={{ 
               border: '1px solid rgba(179, 147, 89, 0.9)', 
-              padding: '8px 20px', 
+              padding: '8px 24px', 
               marginTop: '15px',
-              marginBottom: '32px' 
+              marginBottom: '40px',
+              backgroundColor: 'rgba(22, 48, 32, 0.4)'
             }}
           >
-            <span style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '3px', color: '#b39359', textTransform: 'uppercase', lineHeight: '1.8' }} className="block sm:inline text-center">
-              The Best Tennis Club <br className="block sm:hidden" />
-              <span className="hidden sm:inline">On </span><span className="inline sm:hidden">on </span>Martha's Vineyard
+            <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '4px', color: '#b39359', textTransform: 'uppercase', lineHeight: '1.8' }} className="block sm:inline text-center">
+              The Best Tennis Club on Martha's Vineyard
             </span>
           </div>
 
@@ -61,15 +61,15 @@ const Hero: React.FC = () => {
           <h1 
             style={{ 
               fontFamily: "'Cormorant Garamond', serif", 
-              fontSize: 'clamp(36px, 6vw, 72px)', 
+              fontSize: 'clamp(38px, 6.5vw, 76px)', 
               fontWeight: 300, 
               lineHeight: 1.1, 
               marginBottom: '32px',
-              maxWidth: '800px',
+              maxWidth: '900px',
               color: '#fff'
             }}
           >
-            Your Match.<br />
+            Your Match. <br className="hidden sm:block" />
             Your Court. Your Island.
           </h1>
 
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: 'clamp(24px, 4vw, 36px)', 
               fontWeight: 300, 
-              color: 'rgba(255, 255, 255, 0.85)',
+              color: 'rgba(255, 255, 255, 0.9)',
               marginBottom: '64px',
               display: 'flex',
               alignItems: 'center',
@@ -91,27 +91,27 @@ const Hero: React.FC = () => {
             Play the 
             <span style={{ 
               fontFamily: "'Pinyon Script', cursive", 
-              fontSize: '1.4em', 
+              fontSize: '1.45em', 
               color: '#b39359', 
               textTransform: 'none',
-              marginTop: '-5px'
+              marginTop: '-8px'
             }}>Island Inn</span> 
             way on Martha's Vineyard.
           </h2>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-24">
-            <Link 
-              to="/schedule" 
+            <a 
+              href="sms:+15089393030" 
               className="bg-white text-[#163020] px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white hover:bg-transparent hover:text-white transition-all duration-300 no-underline"
-              style={{ minWidth: '260px' }}
+              style={{ minWidth: '280px' }}
             >
-              Start Your Match
-            </Link>
+              Text Kim To Play
+            </a>
             <Link 
               to="/pricing" 
               className="bg-transparent text-white px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white/30 hover:bg-white hover:text-[#163020] transition-all duration-300 no-underline"
-              style={{ minWidth: '260px' }}
+              style={{ minWidth: '280px' }}
             >
               View Memberships
             </Link>

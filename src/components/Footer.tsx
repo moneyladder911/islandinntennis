@@ -13,14 +13,14 @@ const Footer: React.FC = () => {
     <footer className="bg-[#0d1a12] text-white pt-16 pb-24 md:pb-10 relative overflow-hidden border-t border-white/5">
       {/* Newsletter Section - Refined to match image */}
       <div className="container mb-24 px-6 md:px-12">
-        <div className="bg-[#12261b] p-10 md:p-14 rounded-sm flex flex-col lg:flex-row items-center justify-between gap-10 relative overflow-hidden border border-white/5">
+        <div className="bg-[#12261b] p-8 md:p-14 rounded-sm flex flex-col lg:flex-row items-center justify-between gap-10 relative overflow-hidden border border-white/5">
           <div className="relative z-10 max-w-lg text-center lg:text-left">
-            <span className="text-[10px] font-bold tracking-[6em] uppercase text-gold/60 mb-5 block scale-[0.9] origin-left">NEWSLETTER</span>
+            <span className="text-[10px] font-bold tracking-[4px] uppercase text-gold/60 mb-5 block origin-left">NEWSLETTER</span>
             <h3 className="serif text-4xl mb-4 font-light leading-tight text-white/95">Stay in the loop.</h3>
-            <p className="text-white/40 text-[15px] font-light leading-relaxed">Join our inner circle for seasonal opening dates and island clinics.</p>
+            <p className="text-white/40 text-[15px] font-light leading-relaxed">Join for seasonal opening dates and island clinic schedules.</p>
           </div>
-          <div className="relative z-10 w-full lg:w-auto min-w-[320px] md:min-w-[420px]">
-            <form className="flex flex-col sm:flex-row gap-0 group border border-white/10 overflow-hidden rounded-sm" onSubmit={(e) => e.preventDefault()}>
+          <div className="relative z-10 w-full lg:w-auto min-w-0 md:min-w-[420px]">
+            <form className="flex flex-col md:flex-row gap-2 md:gap-0 group border border-white/10 overflow-hidden rounded-sm" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
                 placeholder="Email address..." 
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               />
               <button 
                 type="submit"
-                className="bg-[#b56c4d] hover:bg-[#c96b3a] text-white px-10 py-5 text-[11px] font-bold tracking-[3px] flex items-center justify-center gap-3 transition-colors uppercase border-none cursor-pointer"
+                className="bg-gold hover:bg-white text-forest px-10 py-5 text-[11px] font-bold tracking-[3px] flex items-center justify-center gap-3 transition-colors uppercase border-none cursor-pointer"
               >
                 JOIN <Send size={14} className="opacity-80" />
               </button>

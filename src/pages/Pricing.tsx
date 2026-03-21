@@ -72,7 +72,7 @@ const PricingPage: React.FC = () => {
     >
       {/* Rewritten Pricing Hero */}
       <section 
-        className="pt-40 pb-20 text-center relative overflow-hidden flex items-center justify-center px-10"
+        className="pt-32 pb-12 text-center relative overflow-hidden flex items-center justify-center px-10"
         style={{ backgroundColor: '#163020' }}
       >
         <div 
@@ -147,7 +147,7 @@ const PricingPage: React.FC = () => {
                 <a 
                   href={`sms:+15089393030&body=Hi Kim, I'm interested in the ${tier.title}!`}
                   className={`btn w-full leading-none no-underline ${
-                    tier.popular ? 'btn-primary' : 'bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white'
+                    tier.popular ? 'bg-gold text-forest hover:bg-white' : 'bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white'
                   }`}
                   style={{ padding: '16px 20px', fontSize: '10px' }}
                 >

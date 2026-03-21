@@ -12,7 +12,7 @@ const Memberships: React.FC = () => {
       icon: <Zap className="text-gold" />,
       features: [
         "Play FREE until November 1st",
-        "Up to 3 sessions per week",
+        "Up to 4 sessions per week",
         "Island Inn Pool Access",
         "Preferred Booking Times",
         "Invitation to Member Mixers"
