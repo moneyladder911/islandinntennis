@@ -2,9 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Best Tennis Club on Martha's Vineyard | Island Inn Oak Bluffs</title>
+    <title>Island Inn Tennis Club | Martha's Vineyard</title>
+    
+    <style>
+      #root:empty {
+        background: #163020;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #root:empty::after {
+        content: "";
+        width: 140px;
+        height: 140px;
+        background: url('/logo.png') no-repeat center center;
+        background-size: contain;
+        animation: logo-pulse 2s infinite ease-in-out;
+      }
+      @keyframes logo-pulse {
+        0%, 100% { transform: scale(0.95); opacity: 0.6; }
+        50% { transform: scale(1.05); opacity: 1; }
+      }
+      body { margin: 0; background-color: #163020; }
+    </style>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Experience the best tennis on Martha's Vineyard. Surrounded by nature, fueled by competition. High-performance clinics, private lessons, and the island's premier courts." />
