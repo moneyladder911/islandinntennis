@@ -39,7 +39,7 @@ const Programs: React.FC<ProgramsProps> = ({ showPage, isPreview = true }) => {
                 }}
                 onMouseEnter={() => setSelected(i)}
                 onMouseLeave={() => setSelected(null)}
-                className={`group relative p-12 lg:p-14 border border-forest/5 cursor-pointer transition-all duration-300 overflow-hidden ${
+                className={`group relative p-8 lg:p-10 border border-forest/5 cursor-pointer transition-all duration-300 overflow-hidden ${
                   selected === i ? 'bg-[#1a3a2a] text-white' : 'bg-white text-forest'
                 }`}
               >
@@ -48,17 +48,17 @@ const Programs: React.FC<ProgramsProps> = ({ showPage, isPreview = true }) => {
                   selected === i ? 'scale-x-100' : 'scale-x-0'
                 }`} />
                 
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center mb-8 text-2xl transition-all duration-300 ${
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-6 text-xl transition-all duration-300 ${
                   selected === i ? 'bg-white/10' : 'bg-[#e8efe9]'
                 }`}>
                   {prog.icon}
                 </div>
-                <h3 className={`serif text-2xl font-semibold mb-4 transition-all duration-300 ${
+                <h3 className={`serif text-xl font-semibold mb-3 transition-all duration-300 ${
                   selected === i ? 'text-white' : 'text-forest'
                 }`}>
                   {prog.title}
                 </h3>
-                <p className={`text-[13px] leading-[1.7] font-light mb-8 transition-all duration-300 ${
+                <p className={`text-[12px] leading-[1.6] font-light mb-6 transition-all duration-300 ${
                   selected === i ? 'text-white/70' : 'text-light'
                 }`}>
                   {prog.desc}

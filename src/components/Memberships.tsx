@@ -29,7 +29,7 @@ const Memberships: React.FC = () => {
         "Play FREE until November 1st",
         "Play unlimited times",
         "Island Inn Pool Access",
-        "10% Off Private Lessons",
+        "Weekly Social Events",
         "Invite to Season Finals"
       ],
       cta: "Become a Member",

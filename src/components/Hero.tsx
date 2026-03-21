@@ -45,8 +45,9 @@ const Hero: React.FC = () => {
           {/* Tagline */}
           <div 
             style={{ 
-              border: '1px solid rgba(179, 147, 89, 0.4)', 
+              border: '1px solid rgba(179, 147, 89, 0.9)', 
               padding: '6px 20px', 
+              marginTop: '15px',
               marginBottom: '32px' 
             }}
           >

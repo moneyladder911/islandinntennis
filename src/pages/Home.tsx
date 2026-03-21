@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       {/* Stats Bar */}
       <div className="bg-forest py-12 flex justify-center gap-20 flex-wrap px-8 border-t border-white/5">
         <div className="text-center">
-          <div className="serif text-[42px] font-semibold text-gold leading-none">4</div>
+          <div className="serif text-[42px] font-semibold text-gold leading-none">3</div>
           <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Courts Available</div>
         </div>
         <div className="text-center">

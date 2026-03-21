@@ -54,7 +54,7 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
           <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-8">ABOUT THE CLUB</div>
           
           <p className="text-[15px] font-light leading-[1.8] text-light mb-10 max-w-lg">
-            Nestled behind Nomans Restaurant at the Island Inn on Beach Road, our club is Oak Bluffs' best-kept secret. Courts, coaches, and community for every player.
+            Nestled behind Nomans Restaurant at the Island Inn on Beach Road, we're Oak Bluffs' favorite social tennis club. As much about community as competition — join us for matches, mixers, and the best island connections on and off the court.
           </p>
           
           <div className="grid grid-cols-2 gap-y-4 mb-14">

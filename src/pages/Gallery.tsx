@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 const GalleryPage: React.FC = () => {
   const images = [
+    { span: 'md:col-span-2', title: 'Island Inn Tennis Club', url: '/gallery/island-inn-sign.jpg', color: '#68a1c9', pos: 'center' },
     { span: 'md:row-span-2', title: 'Seasonal Mixer at Island Inn', url: '/gallery/gallery-1.jpg', color: '#1a3a2a', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Summer Family Tennis', url: '/gallery/gallery-2.jpg', color: '#c96b3a', pos: 'top' },
     { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
