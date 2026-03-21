@@ -1,4 +1,4 @@
-import React from 'react';
+`Iimport React from 'react';
 import { motion } from 'framer-motion';
 
 const GalleryPage: React.FC = () => {
@@ -9,7 +9,7 @@ const GalleryPage: React.FC = () => {
     { span: '', title: 'Morning Drills with the Girls', url: '/gallery/gallery-4.jpg', color: '#0d1f16', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 10%' },
     { span: '', title: 'Island Inn Pool Side', icon: '🏊', color: '#1a3a5a' },
-    { span: 'md:row-span-2', title: 'Nomans Garden View', icon: '🌿', color: '#153d20' },
+    { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },
     { span: '', title: 'Tennis Pro Shop', icon: '🏪', color: '#2a5a3a' },
   ];
 
@@ -57,7 +57,7 @@ const GalleryPage: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative group bg-white overflow-hidden rounded-sm shadow-premium ${img.span}`}
+                className={`relative group bg - white overflow - hidden rounded - sm shadow - premium ${ img.span } `}
               >
                 {img.url ? (
                   <img 
