@@ -4,6 +4,8 @@ import Intro from '../components/Intro';
 import Programs from '../components/Programs';
 import Reviews from '../components/Reviews';
 import Memberships from '../components/Memberships';
+import MeetKim from '../components/MeetKim';
+import SchedulePreview from '../components/SchedulePreview';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -16,12 +18,16 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-cream">
+      {/* 1. Hero */}
       <Hero />
       
-      {/* About Section - Now BEFORE Memberships per user request */}
+      {/* 2. Intro: Tennis at the Heart */}
       <Intro showPage={showPage} />
+
+      {/* 3. About Us snippet with Kim's Picture */}
+      <MeetKim />
       
-      {/* Core Memberships Offer - Primary Section */}
+      {/* 4. Summer Memberships */}
       <Memberships />
 
       {/* Stats Bar */}
@@ -44,13 +50,16 @@ const Home: React.FC = () => {
         </div>
       </div>
 
+      {/* 5. Schedule Little Section */}
+      <SchedulePreview />
+
+      {/* 6. Programs Section */}
       <Programs isPreview={true} showPage={showPage} />
       
+      {/* 7. Testimonials */}
       <Reviews isPreview={true} showPage={showPage} />
 
-
-
-      {/* Map Section */}
+      {/* 8. Find Us (Map) */}
       <section className="bg-[#e8efe9] py-24 md:py-32">
         <div className="container px-8 max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
           <div>
