@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import Gallery from './pages/Gallery';
 import Schedule from './pages/Schedule';
+import Terms from './pages/Terms';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -47,6 +48,8 @@ const App: React.FC = () => {
             <Route path="/pricing" element={<PageTransition><Pricing /></PageTransition>} />
             <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
             <Route path="/schedule" element={<PageTransition><Schedule /></PageTransition>} />
+            <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
+            <Route path="/policy" element={<PageTransition><Terms /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </Layout>

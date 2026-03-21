@@ -16,7 +16,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-cream">
-      <Hero showPage={showPage} />
+      <Hero />
+      
+      {/* About Section - Now BEFORE Memberships per user request */}
+      <Intro showPage={showPage} />
       
       {/* Core Memberships Offer - Primary Section */}
       <Memberships />
@@ -41,9 +44,6 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <Intro showPage={showPage} />
-      
-      {/* Programs Section - Now on White per user request */}
       <Programs isPreview={true} showPage={showPage} />
       
       <Reviews isPreview={true} showPage={showPage} />
@@ -71,11 +71,17 @@ const Home: React.FC = () => {
                <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest">(508) 693-2002</div>
                <div className="flex gap-3 text-xs font-bold uppercase tracking-widest text-forest text-gold">Fastest: WhatsApp +1 (508) 939-3030</div>
             </div>
-            <a href="https://maps.google.com/?q=30+Island+Inn+Road+Oak+Bluffs+MA" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10">
+            <a href="https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10">
               Get Directions
             </a>
           </div>
-          <div className="bg-forest aspect-[4/3] rounded-sm overflow-hidden shadow-2xl border border-white/5">
+          <a 
+            href="https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block cursor-pointer hover:opacity-90 transition-opacity bg-forest aspect-[4/3] rounded-sm overflow-hidden shadow-2xl border border-white/5"
+            title="Open Island Inn in Google Maps"
+          >
             <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
               <rect width="480" height="320" fill="#163020"/>
               <rect x="0" y="200" width="480" height="120" fill="#1a3a5a" opacity="0.8"/>
@@ -87,7 +93,7 @@ const Home: React.FC = () => {
               <rect x="128" y="210" width="162" height="32" rx="4" fill="rgba(0,0,0,0.6)"/>
               <text x="209" y="230" textAnchor="middle" fill="white" fontSize="11" fontWeight="600">Island Inn Tennis</text>
             </svg>
-          </div>
+          </a>
         </div>
       </section>
     </div>

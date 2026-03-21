@@ -80,28 +80,38 @@ const Programs: React.FC<ProgramsProps> = ({ showPage, isPreview = true }) => {
   }
 
   // Same for sub-page view...
+  // Render full page view
   return (
     <div className="bg-cream min-h-screen pt-24 pb-32">
        <div className="container px-8 max-w-[1200px] mx-auto text-center mb-20">
             <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4">OUR COMPLETE LIST</div>
             <h2 className="serif text-5xl font-light text-forest leading-tight mb-6">Expertise for Every <em className="italic text-clay">Level</em></h2>
        </div>
-       <div className="container px-8 max-w-[1100px] mx-auto space-y-2">
+       <div className="container px-8 max-w-[1000px] mx-auto space-y-6">
          {programs.map((prog, i) => (
-           <div key={i} className={`grid md:grid-cols-[1fr,1.4fr] bg-white border border-forest/5 group ${i % 2 === 1 ? 'direction-rtl' : ''}`}>
-             <div className="h-[320px] bg-[#1a3a2a] flex items-center justify-center text-[80px] grayscale group-hover:grayscale-0 transition-all duration-700">
-               {prog.icon}
+           <div key={i} className="flex flex-col md:flex-row md:items-center gap-8 bg-white border border-forest/10 p-8 md:p-10 shadow-sm hover:shadow-premium transition-all duration-300 group rounded-sm">
+             
+             <div className="w-20 h-20 rounded-full bg-forest shrink-0 flex items-center justify-center text-3xl group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500 shadow-inner">
+               <span className="grayscale group-hover:grayscale-0 transition-all duration-500">{prog.icon}</span>
              </div>
-             <div className="p-12 md:p-14 flex flex-col justify-center text-left" style={{ direction: 'ltr' }}>
-               <span className="text-[10px] font-bold tracking-[3px] uppercase text-clay mb-3">{prog.meta}</span>
-               <h3 className="serif text-3xl font-light text-forest mb-4 leading-tight">{prog.title}</h3>
-               <p className="text-[14px] font-light text-light leading-[1.8] mb-8">{prog.desc}</p>
-               <ul className="mb-10 space-y-2 text-forest/70 list-none p-0">
-                  <li className="flex items-center gap-3 text-sm font-medium"><div className="w-4 h-[1px] bg-clay" /> Professional Instruction</li>
-                  <li className="flex items-center gap-3 text-sm font-medium"><div className="w-4 h-[1px] bg-clay" /> On Martha's Vineyard</li>
-               </ul>
-               <a href="https://wa.me/15089393030" target="_blank" className="btn btn-primary self-start">Book via WhatsApp</a>
+             
+             <div className="flex-1 text-left">
+               <span className="text-[10px] font-bold tracking-[3px] uppercase text-clay mb-2 block">{prog.meta}</span>
+               <h3 className="serif text-3xl font-light text-forest mb-3 leading-tight">{prog.title}</h3>
+               <p className="text-[14px] font-light text-light leading-[1.8] max-w-2xl">{prog.desc}</p>
              </div>
+             
+             <div className="mt-4 md:mt-0 md:ml-auto">
+               <a 
+                 href={`https://wa.me/15089393030?text=Hi%20Kim,%20I'm%20interested%20in%20the%20${prog.title}%20program.`} 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="btn bg-transparent border border-clay text-clay hover:bg-clay hover:text-white whitespace-nowrap px-8 py-4 w-full md:w-auto text-center"
+               >
+                 INQUIRE
+               </a>
+             </div>
+             
            </div>
          ))}
        </div>

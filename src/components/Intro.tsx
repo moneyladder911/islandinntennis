@@ -49,8 +49,10 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
            viewport={{ once: true }}
            className="order-1 lg:order-2"
         >
-          <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4">ABOUT THE CLUB</div>
-          <h2 className="serif text-[clamp(36px,5vw,58px)] font-light text-forest leading-tight mb-8">Tennis at the Heart of <br/><em className="italic text-clay font-normal">Martha's Vineyard</em></h2>
+          {/* Swapped Title and Tag as requested: Title first, Subtitle second */}
+          <h2 className="serif text-[clamp(36px,5vw,58px)] font-light text-forest leading-tight mb-4">Tennis at the Heart of <br/><em className="italic text-clay font-normal">Martha's Vineyard</em></h2>
+          <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-8">ABOUT THE CLUB</div>
+          
           <p className="text-[15px] font-light leading-[1.8] text-light mb-10 max-w-lg">
             Nestled behind Nomans Restaurant at the Island Inn on Beach Road, our club is Oak Bluffs' best-kept secret. Courts, coaches, and community for every player.
           </p>

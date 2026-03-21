@@ -1,157 +1,136 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-interface HeroProps {
-  showPage: (name: string) => void;
-}
-
-const Hero: React.FC<HeroProps> = ({ showPage }) => {
+const Hero: React.FC = () => {
   return (
     <section 
       style={{ 
         height: '100vh', 
+        width: '100%', 
+        backgroundColor: '#163020', 
         position: 'relative', 
-        overflow: 'hidden', 
         display: 'flex', 
         alignItems: 'center', 
-        justifyContent: 'center',
-        backgroundColor: '#0d1f16',
-        paddingTop: '72px'
+        justifyContent: 'center', 
+        textAlign: 'center', 
+        overflow: 'hidden',
+        color: '#fff',
+        padding: '0 20px'
       }}
     >
-      {/* Background Gradient */}
-      <div 
-        style={{ 
-          position: 'absolute', 
-          inset: 0, 
-          zIndex: 0,
-          background: 'linear-gradient(165deg, rgba(13,31,22,1) 0%, rgba(26,58,42,0.95) 50%, rgba(181,108,77,0.1) 100%)' 
-        }} 
-      />
-      
-      {/* Court SVG Removed per user request - "erase this at the home page too" */}
-
-      <div 
-        style={{ 
-          position: 'relative', 
-          zIndex: 10, 
-          padding: '0 32px', 
-          textAlign: 'center', 
-          maxWidth: '960px',
-          margin: '0 auto' 
-        }}
-      >
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          style={{ 
-            display: 'inline-block', 
-            padding: '8px 24px', 
-            border: '1px solid rgba(179, 147, 89, 0.4)', 
-            color: '#b39359', 
-            fontSize: '10px', 
-            fontWeight: 700, 
-            letterSpacing: '5px', 
-            textTransform: 'uppercase', 
-            marginBottom: '48px' 
-          }}
-        >
-          Martha's Vineyard Premier Tennis
-        </motion.div>
-
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          style={{ 
-            fontFamily: "'Cormorant Garamond', serif", 
-            fontSize: 'clamp(54px, 10vw, 110px)', 
-            fontWeight: 300, 
-            color: '#fff', 
-            lineHeight: 1, 
-            marginBottom: '40px',
-            letterSpacing: '-0.01em'
-          }}
-        >
-          Play Where the<br/><em style={{ fontStyle: 'italic', color: '#b39359', fontWeight: 'normal' }}>Island Breathes</em>
-        </motion.h1>
-
-        <div 
-          style={{ 
-            color: 'rgba(255, 255, 255, 0.5)', 
-            fontSize: '11px', 
-            fontWeight: 600,
-            letterSpacing: '5px', 
-            textTransform: 'uppercase', 
-            marginBottom: '56px' 
-          }}
-        >
-          30 Island Inn Road · Oak Bluffs, MA 02557
-        </div>
-
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          style={{ 
-            color: 'rgba(255, 255, 255, 0.8)', 
-            fontSize: '19px', 
-            fontWeight: 300, 
-            lineHeight: 1.8, 
-            marginBottom: '64px', 
-            maxWidth: '600px', 
-            margin: '0 auto 64px' 
-          }}
-        >
-          On-demand matches, private lessons and clinics set against the natural beauty of Martha's Vineyard.
-        </motion.p>
-
-        <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a 
-            href="https://wa.me/15089393030" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{ 
-              backgroundColor: '#b56c4d', 
-              color: '#fff', 
-              padding: '20px 56px', 
-              fontSize: '12px', 
-              fontWeight: 700, 
-              letterSpacing: '3px', 
-              textTransform: 'uppercase', 
-              textDecoration: 'none', 
-              borderRadius: '2px',
-              boxShadow: '0 10px 30px rgba(181, 108, 77, 0.3)' 
-            }}
-          >
-            TEXT KIM TO PLAY
-          </a>
-          <button 
-            onClick={() => showPage('/memberships')} 
-            style={{ 
-              backgroundColor: 'transparent', 
-              color: '#fff', 
-              padding: '20px 56px', 
-              fontSize: '12px', 
-              fontWeight: 700, 
-              letterSpacing: '3px', 
-              textTransform: 'uppercase', 
-              border: '1px solid rgba(255, 255, 255, 0.4)', 
-              borderRadius: '2px',
-              cursor: 'pointer'
-            }}
-          >
-            VIEW MEMBERSHIPS
-          </button>
-        </div>
+      {/* Background Image & Overlays */}
+      <div className="absolute inset-0 z-0 bg-forest overflow-hidden">
+        <motion.img 
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.05 }}
+          transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+          src="/island-inn-real.webp" 
+          alt="Island Inn Tennis Courts Aerial View"
+          className="w-full h-full object-cover opacity-60"
+          fetchPriority="high"
+          decoding="sync"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-forest/30 via-forest/50 to-[#163020]" />
       </div>
 
-      <motion.div 
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/10 select-none pb-safe"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <div className="w-[1px] h-12 bg-white/10 mx-auto mb-4" />
-        <span style={{ fontSize: '9px', tracking: '4px', textTransform: 'uppercase' }}>Scroll</span>
-      </motion.div>
+      <div className="container relative z-10 max-w-5xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className="flex flex-col items-center"
+        >
+          {/* Tagline - Closer to title */}
+          <div 
+            style={{ 
+              border: '1px solid rgba(179, 147, 89, 0.3)', 
+              padding: '6px 20px', 
+              marginBottom: '16px' 
+            }}
+          >
+            <span style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '4px', color: '#b39359', textTransform: 'uppercase' }}>
+              Martha's Vineyard Premier Tennis
+            </span>
+          </div>
+
+          {/* Main Headline - Tightened line height and margins */}
+          <h1 
+            style={{ 
+              fontFamily: "'Cormorant Garamond', serif", 
+              fontSize: 'clamp(52px, 10vw, 110px)', 
+              fontWeight: 300, 
+              lineHeight: 0.95, 
+              marginBottom: '12px',
+              maxWidth: '900px'
+            }}
+          >
+            Play Where the<br />
+            <em style={{ fontStyle: 'italic', fontWeight: 400, color: '#b39359' }}>Island Breathes</em>
+          </h1>
+
+          {/* Location Bar - Closer to title */}
+          <div 
+            style={{ 
+              fontSize: '10px', 
+              fontWeight: 700, 
+              letterSpacing: '5px', 
+              color: 'rgba(255, 255, 255, 0.5)', 
+              textTransform: 'uppercase', 
+              marginBottom: '24px' 
+            }}
+          >
+            30 Island Inn Road • Oak Bluffs, MA 02557
+          </div>
+
+          {/* Description - Compacted */}
+          <p 
+            style={{ 
+              fontSize: 'clamp(15px, 2vw, 18px)', 
+              fontWeight: 300, 
+              lineHeight: 1.6, 
+              color: 'rgba(255, 255, 255, 0.7)', 
+              maxWidth: '600px', 
+              marginBottom: '32px' 
+            }}
+          >
+            On-demand matches, private lessons and clinics set against the natural beauty of Martha's Vineyard.
+          </p>
+
+          {/* Buttons - Tightened horizontal and vertical gap */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <Link 
+              to="/schedule" 
+              className="btn btn-primary no-underline"
+              style={{ 
+                padding: '20px 48px', 
+                fontSize: '11px', 
+                fontWeight: 700, 
+                letterSpacing: '3px',
+                minWidth: '240px'
+              }}
+            >
+              START YOUR MATCH
+            </Link>
+            <Link 
+              to="/pricing" 
+              className="btn btn-outline no-underline"
+              style={{ 
+                padding: '20px 48px', 
+                fontSize: '11px', 
+                fontWeight: 700, 
+                letterSpacing: '3px', 
+                borderColor: 'rgba(255, 255, 255, 0.3)', 
+                color: '#fff',
+                minWidth: '240px'
+              }}
+            >
+              VIEW MEMBERSHIPS
+            </Link>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 };

@@ -48,8 +48,8 @@ const Navbar: React.FC = () => {
           <span style={{ fontSize: '8px', fontWeight: 500, color: '#b39359', letterSpacing: '2.5px', textTransform: 'uppercase', marginTop: '4px' }}>Martha's Vineyard</span>
         </Link>
 
-        {/* Desktop Links - Smaller and closer per user request */}
-        <div className="hidden lg:flex items-center gap-7">
+        {/* Desktop Links */}
+        <div className="hidden lg:flex items-center gap-7 ml-auto">
           {navLinks.map((link) => (
             <Link 
               key={link.path} 
@@ -88,10 +88,17 @@ const Navbar: React.FC = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - ELIMINATED on Desktop by removing inline display style */}
         <button 
-          style={{ backgroundColor: 'transparent', border: 'none', cursor: 'pointer', padding: '10px', display: 'flex' }}
-          className="lg:hidden text-white"
+          className="lg:hidden flex items-center justify-center"
+          style={{ 
+            backgroundColor: 'transparent', 
+            border: 'none', 
+            cursor: 'pointer', 
+            padding: '10px',
+            color: '#fff',
+            outline: 'none'
+          }}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -110,7 +117,7 @@ const Navbar: React.FC = () => {
           alignItems: 'center', 
           justifyContent: 'center', 
           gap: '32px',
-          padding: '60px 40px',
+what haop          padding: '60px 40px',
           opacity: isOpen ? 1 : 0,
           visibility: isOpen ? 'visible' : 'hidden',
           transition: 'all 0.5s ease-in-out',

@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     { icon: <Phone size={20} />, title: 'Phone', value: '(508) 693-2002', note: 'Island Inn main line', link: 'tel:+15086932002' },
     { icon: <Instagram size={20} />, title: 'Instagram', value: '@islandinntennismv', note: 'Photos, updates and island vibes', link: 'https://www.instagram.com/islandinntennismv/' },
     { icon: <Facebook size={20} />, title: 'Facebook', value: 'Island Inn Tennis Club', note: 'Events, community and news', link: 'https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/' },
-    { icon: <MapPin size={20} />, title: 'Location', value: '30 Island Inn Road', note: 'Oak Bluffs, MA 02557 - Behind Nomans Restaurant', link: 'https://maps.google.com/?q=30+Island+Inn+Road+Oak+Bluffs+MA' },
+    { icon: <MapPin size={20} />, title: 'Location', value: '30 Island Inn Road', note: 'Oak Bluffs, MA 02557 - Behind Nomans Restaurant', link: "https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" },
   ];
 
   const faqs = [
@@ -88,54 +88,81 @@ const Contact: React.FC = () => {
         </div>
         
         {/* Map Section */}
-        <div className="mt-20 grid md:grid-cols-2 gap-20 items-center">
+        <div className="mt-24 mb-10 grid md:grid-cols-2 gap-20 items-center">
           <div>
-            <span className="section-tag">Find Us</span>
-            <h2 className="section-title">Getting to <em>Island Inn</em></h2>
-            <p className="section-sub mb-8">Just over a mile from the Oak Bluffs ferry terminal. On the bus route, next to the bicycle path to Edgartown, and walking distance to State Beach.</p>
+            <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">Find Us</span>
+            <h2 className="serif text-5xl font-light text-forest leading-tight mb-6">Getting to <em className="italic text-clay">Island Inn</em></h2>
+            <p className="text-light font-light leading-[1.8] text-[15px] mb-8 max-w-md">Just over a mile from the Oak Bluffs ferry terminal. On the bus route, next to the bicycle path to Edgartown, and walking distance to State Beach.</p>
             <div className="space-y-3 mb-10">
               <div className="flex items-center gap-3 text-sm font-light text-forest"><div className="w-2 h-2 rounded-full bg-clay" /> 1.2 miles from OB ferry terminal</div>
               <div className="flex items-center gap-3 text-sm font-light text-forest"><div className="w-2 h-2 rounded-full bg-clay" /> On the MVTA bus route</div>
               <div className="flex items-center gap-3 text-sm font-light text-forest"><div className="w-2 h-2 rounded-full bg-clay" /> On the bike path to Edgartown</div>
               <div className="flex items-center gap-3 text-sm font-light text-forest"><div className="w-2 h-2 rounded-full bg-clay" /> Adjacent to Nomans Restaurant</div>
             </div>
-            <a href="https://maps.google.com/?q=30+Island+Inn+Road+Oak+Bluffs+MA" target="_blank" className="btn btn-outline border-clay text-clay hover:bg-clay hover:text-white">Open in Google Maps</a>
+            <a href="https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" target="_blank" className="btn bg-transparent border border-clay text-clay hover:bg-clay hover:text-white">Open in Google Maps</a>
           </div>
-          <div className="aspect-[4/3] bg-forest rounded-xl overflow-hidden shadow-2xl relative">
-            <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute inset-0">
-              <rect width="480" height="320" fill="#1a3a2a"/>
-              <rect x="0" y="200" width="480" height="120" fill="#1a3a5a" opacity="0.8"/>
-              <path d="M0 200 Q120 160 240 170 Q360 180 480 160 L480 200 Z" fill="#1e5c38"/>
-              <circle cx="210" cy="185" r="16" fill="#c96b3a"/>
-              <circle cx="210" cy="185" r="8" fill="white"/>
-              <circle cx="210" cy="185" r="4" fill="#c96b3a"/>
-              <circle cx="210" cy="185" r="24" fill="none" stroke="rgba(201,107,58,0.4)" stroke-width="2"/>
-              <rect x="128" y="210" width="162" height="32" rx="4" fill="rgba(0,0,0,0.6)"/>
-              <text x="209" y="230" text-anchor="middle" fill="white" font-size="11" font-family="Montserrat,sans-serif" font-weight="600">Island Inn Tennis</text>
+          <a 
+            href="https://www.google.com/maps/place/The+Island+Inn+on+Martha's+Vineyard/@41.4401016,-70.5577774,17z/data=!4m9!3m8!1s0x89e5293c44f30697:0x629a4dbe946e01c2!5m2!4m1!1i2!8m2!3d41.4401016!4d-70.5577774!16s%2Fg%2F1tczlhg9" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block cursor-pointer hover:opacity-90 transition-opacity aspect-[4/3] bg-forest rounded-sm overflow-hidden shadow-2xl relative p-8 flex items-center justify-center border border-forest/10"
+            title="Open Island Inn in Google Maps"
+          >
+            {/* Real Tennis Court Layout SVG */}
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-80">
+              {/* Green Court Outer */}
+              <rect x="0" y="0" width="400" height="300" fill="#1a3a2a" rx="4" />
+              
+              {/* Outer Boundary (Doubles) */}
+              <rect x="40" y="40" width="320" height="220" fill="none" stroke="white" strokeWidth="1.5" />
+              
+              {/* Singles Sidelines */}
+              <line x1="40" y1="70" x2="360" y2="70" stroke="white" strokeWidth="1" strokeOpacity="0.5" />
+              <line x1="40" y1="230" x2="360" y2="230" stroke="white" strokeWidth="1" strokeOpacity="0.5" />
+              
+              {/* Net Line (Center) */}
+              <line x1="200" y1="40" x2="200" y2="260" stroke="#b39359" strokeWidth="2" />
+              
+              {/* Service Lines */}
+              <line x1="90" y1="70" x2="90" y2="230" stroke="white" strokeWidth="1" />
+              <line x1="310" y1="70" x2="310" y2="230" stroke="white" strokeWidth="1" />
+              
+              {/* Center Service Line */}
+              <line x1="90" y1="150" x2="310" y2="150" stroke="white" strokeWidth="1" />
+              
+              {/* Center Mark */}
+              <line x1="40" y1="150" x2="50" y2="150" stroke="white" strokeWidth="1.5" />
+              <line x1="350" y1="150" x2="360" y2="150" stroke="white" strokeWidth="1.5" />
+
+              {/* Location Pointer */}
+              <circle cx="200" cy="150" r="10" fill="#c96b3a" className="animate-pulse" />
+              <circle cx="200" cy="150" r="4" fill="white" />
+              
+              <text x="200" y="285" textAnchor="middle" fill="white" fontSize="10" fontFamily="serif" letterSpacing="2">ISLAND INN COURTS</text>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       
       {/* FAQ Section */}
-      <div className="section-padding bg-cream/50 mt-20 border-t border-clay/5">
+      <div className="py-24 bg-cream/50 mt-10 border-t border-clay/5">
         <div className="container px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="section-tag">Common Inquiries</span>
-            <h2 className="section-title">Frequently Asked <em>Questions</em></h2>
+            <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">Common Inquiries</span>
+            <h2 className="serif text-5xl font-light text-forest leading-tight">Frequently Asked <em className="italic text-clay">Questions</em></h2>
           </div>
-          <div className="max-w-3xl mx-auto space-y-4">
+          <div className="max-w-3xl mx-auto bg-white border border-clay/10 shadow-sm rounded-sm">
             {faqs.map((faq, i) => (
-              <details key={i} className="group bg-white border border-clay/10 p-4 md:p-8 rounded-sm shadow-sm transition-all duration-300 open:shadow-premium">
-                <summary className="flex items-center justify-between cursor-pointer list-none appearance-none outline-none">
-                  <h4 className="serif text-xl font-light text-forest group-hover:text-clay transition-colors pr-8 leading-tight">
+              <details key={i} className="group border-b border-clay/10 last:border-b-0">
+                <summary className="flex items-center justify-between cursor-pointer list-none appearance-none outline-none p-6 md:p-8">
+                  <h4 className="serif text-2xl font-light text-forest group-hover:text-clay transition-colors pr-8 leading-tight">
                     {faq.q}
                   </h4>
                   <div className="w-8 h-8 rounded-full bg-mist flex items-center justify-center shrink-0 group-open:rotate-180 transition-transform">
                     <ChevronDown size={14} className="text-forest" />
                   </div>
                 </summary>
-                <div className="mt-8 pt-8 border-t border-clay/5 text-sm font-light text-light leading-[1.8] text-balance">
+                <div className="px-6 md:px-8 pb-8 text-sm font-light text-light leading-[1.8] text-balance">
                   {faq.a}
                 </div>
               </details>

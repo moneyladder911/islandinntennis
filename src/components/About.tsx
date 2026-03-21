@@ -12,7 +12,7 @@ const About: React.FC = () => {
     <div>
       {/* Rewritten About Hero - More Premium */}
       <section 
-        className="pt-48 pb-32 relative overflow-hidden flex items-center justify-center text-center px-10"
+        className="pt-40 pb-20 text-center relative overflow-hidden flex items-center justify-center px-10"
         style={{ backgroundColor: '#163020' }}
       >
         <div 
@@ -20,20 +20,21 @@ const About: React.FC = () => {
           style={{ background: 'linear-gradient(135deg, rgba(13,31,22,1) 0%, rgba(26,58,42,0.8) 50%, rgba(181,108,77,0.3) 100%)' }}
         />
         
-        <div className="container relative z-10 max-w-4xl mx-auto">
+        <div className="w-full relative z-10 px-6 sm:px-10 flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto"
           >
-            <span className="text-[10px] font-bold tracking-[6px] uppercase text-gold mb-6 block">A VINEYARD LEGACY</span>
-            <h1 className="serif text-[clamp(48px,8vw,92px)] font-light text-white leading-[1.05] mb-8 select-none">
+            <span className="text-[10px] font-bold tracking-[6px] uppercase text-gold mb-4 inline-block text-center w-full">A VINEYARD LEGACY</span>
+            <h1 className="serif text-[clamp(32px,5vw,48px)] font-light text-white leading-[1.2] mb-6 select-none text-center w-full flex-shrink-0">
               A Tradition of <em className="italic text-gold font-normal">Excellence</em> & <br/><em className="italic text-gold font-normal">Ocean Breezes</em>
             </h1>
-            <p className="text-white/60 font-light leading-[1.8] text-lg max-w-2xl mx-auto mb-12">
+            <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">
               Island Inn Tennis Club is the Vineyard's best-kept secret. More than a facility, we are a gathering place for those who love the game and the unique spirit of Oak Bluffs.
             </p>
-            <div className="w-16 h-[1px] bg-gold/30 mx-auto" />
+            <div className="w-12 h-[1px] bg-gold/30 mx-auto" />
           </motion.div>
         </div>
         

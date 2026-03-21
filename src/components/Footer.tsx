@@ -53,10 +53,10 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-[10px] font-bold tracking-[3px] uppercase text-gold/80 mb-6">Navigate</h4>
           <ul className="space-y-3 list-none p-0 m-0">
-            {['Home', 'Programs', 'Pricing', 'Schedule', 'About', 'Gallery', 'Contact'].map((item) => (
+            {['Home', 'Programs', 'Pricing', 'Schedule', 'About', 'Gallery', 'Contact', 'Terms'].map((item) => (
               <li key={item}>
                 <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-xs font-light text-white/40 hover:text-gold transition-colors no-underline">
-                  {item}
+                  {item === 'Terms' ? 'Club Terms' : item}
                 </Link>
               </li>
             ))}
@@ -96,8 +96,8 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="container pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 px-6">
-        <p className="text-[9px] font-medium tracking-[2px] uppercase text-white/10 text-center md:text-left">
-          &copy; {currentYear} Island Inn Tennis Club · MV
+        <p className="text-[9px] font-medium tracking-[2px] uppercase text-white/20 text-center md:text-left">
+          &copy; {currentYear} Island Inn Tennis Club · <Link to="/terms" className="hover:text-gold text-white/20 no-underline">Terms & Policies</Link>
         </p>
         <button 
           onClick={scrollToTop}
