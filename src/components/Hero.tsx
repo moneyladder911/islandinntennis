@@ -67,8 +67,8 @@ const Hero: React.FC = () => {
               color: '#fff'
             }}
           >
-            Surrounded by Nature.<br />
-            Fueled by Competition.
+            Your Match.<br />
+            Your Court. Your Island.
           </h1>
 
           {/* Sub-Heading (H2) */}
