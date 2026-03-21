@@ -8,7 +8,7 @@ const GalleryPage: React.FC = () => {
     { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
     { span: '', title: 'Morning Drills with the Girls', url: '/gallery/gallery-4.jpg', color: '#0d1f16', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 10%' },
-    { span: '', title: 'Island Inn Pool Side', icon: '\u{1F3CA}', color: '#1a3a5a' },
+    { span: '', title: 'Island Inn Pool Side', url: '/gallery/pool-side.jpg', color: '#1a3a5a', pos: 'center' },
     { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },
     { span: '', title: 'Tennis Pro Shop', icon: '\u{1F3EA}', color: '#2a5a3a' },
   ];
