@@ -91,9 +91,7 @@ const Memberships: React.FC = () => {
               </ul>
 
               <a 
-                href="https://wa.me/15089393030" 
-                target="_blank"
-                rel="noopener noreferrer"
+                href="sms:+15089393030"
                 className={`w-full py-5 text-[11px] font-bold tracking-[3px] uppercase no-underline rounded-sm transition-all duration-300 font-body ${
                   plan.highlight ? 'bg-[#163020] text-white hover:bg-[#c96b3a] shadow-xl' : 'bg-gold/90 text-forest hover:bg-white hover:text-forest'
                 }`}
@@ -107,7 +105,7 @@ const Memberships: React.FC = () => {
         <div className="mt-20 p-10 bg-forest/5 border border-forest/5 text-center flex flex-col md:flex-row items-center justify-center gap-10">
           <div className="text-left max-w-sm">
              <h4 className="serif text-2xl font-light mb-2">Member Benefit No. 1</h4>
-             <p className="text-forest/60 text-sm font-light leading-relaxed">Members always <em className="text-clay italic">Play for Free</em>. Book via WhatsApp and walk on court.</p>
+             <p className="text-forest/60 text-sm font-light leading-relaxed">Members always <em className="text-clay italic">Play for Free</em>. Text Kim and walk on court.</p>
           </div>
           <div className="w-[1px] h-12 bg-forest/10 hidden md:block" />
           <div className="text-left max-w-sm">

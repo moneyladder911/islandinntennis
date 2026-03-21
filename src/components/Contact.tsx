@@ -3,7 +3,7 @@ import { Phone, Instagram, Facebook, MapPin, MessageSquare, ChevronDown } from '
 
 const Contact: React.FC = () => {
   const contactMethods = [
-    { icon: <MessageSquare size={20} />, title: 'WhatsApp - Fastest Way', value: '+1 (508) 939-3030', note: 'Text Kim directly - fast response', link: 'https://wa.me/15089393030' },
+    { icon: <MessageSquare size={20} />, title: 'Text Kim - Fastest Way', value: '+1 (508) 939-3030', note: 'Text Kim directly - fast response', link: 'sms:+15089393030' },
     { icon: <Phone size={20} />, title: 'Phone', value: '(508) 693-2002', note: 'Island Inn main line', link: 'tel:+15086932002' },
     { icon: <Instagram size={20} />, title: 'Instagram', value: '@islandinntennismv', note: 'Photos, updates and island vibes', link: 'https://www.instagram.com/islandinntennismv/' },
     { icon: <Facebook size={20} />, title: 'Facebook', value: 'Island Inn Tennis Club', note: 'Events, community and news', link: 'https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/' },
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
   const faqs = [
     { q: "Do I need to bring my own racket?", a: "No! We have high-quality Head and Wilson rackets available for rental, and junior rackets are included in program fees. However, you're always welcome to bring your own." },
     { q: "What skill level do I need?", a: "All skill levels are welcome! From your very first backhand to tournament-ready play, Kim will match you with the right program and partners." },
-    { q: "How do I book a court or lesson?", a: "The fastest way is to text Kim directly on WhatsApp at +1 (508) 939-3030. You can also use our booking forms on the website." },
+    { q: "How do I book a court or lesson?", a: "The fastest way is to text Kim directly at +1 (508) 939-3030. You can also call the Island Inn main line or send us a message below." },
     { q: "Is there parking available?", a: "Yes, there is ample free parking available behind Nomans Restaurant, directly adjacent to the tennis courts." },
     { q: "Are lessons available year-round?", a: "Our main season runs from May through October. For off-season play, please contact us directly as availability varies based on island weather." },
     { q: "What should I wear?", a: "Comfortable athletic wear and proper tennis shoes (non-marking soles) are required on the courts. Please no sandals or smooth-soled street shoes." },
@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
               {contactMethods.map((method, i) => (
                 <div key={i} className="flex gap-6 items-start group">
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 border transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12 ${
-                    i === 0 ? 'bg-[#25D366] border-transparent' : 'bg-white/5 border-gold/20'
+                    i === 0 ? 'bg-clay border-transparent' : 'bg-white/5 border-gold/20'
                   }`}>
                     {method.icon}
                   </div>
@@ -81,8 +81,8 @@ const Contact: React.FC = () => {
                 <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">Message</label>
                 <textarea className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all min-h-[120px]" placeholder="Tell us about your experience level..."></textarea>
               </div>
-              <a href="https://wa.me/15089393030" target="_blank" className="btn btn-primary w-full shadow-lg shadow-clay/20">Message Kim on WhatsApp</a>
-              <p className="text-[11px] text-light text-center">WhatsApp is the fastest way to reach us and book your session.</p>
+              <a href="sms:+15089393030" className="btn btn-primary w-full shadow-lg shadow-clay/20">Text Kim to Book</a>
+              <p className="text-[11px] text-light text-center">Texting Kim is the fastest way to reach us and book your session.</p>
             </form>
           </div>
         </div>

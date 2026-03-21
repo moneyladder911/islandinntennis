@@ -103,9 +103,7 @@ const Programs: React.FC<ProgramsProps> = ({ showPage, isPreview = true }) => {
              
              <div className="mt-4 md:mt-0 md:ml-auto">
                <a 
-                 href={`https://wa.me/15089393030?text=Hi%20Kim,%20I'm%20interested%20in%20the%20${prog.title}%20program.`} 
-                 target="_blank" 
-                 rel="noopener noreferrer"
+                 href={`sms:+15089393030&body=Hi Kim, I'm interested in the ${prog.title} program.`}
                  className="btn bg-transparent border border-clay text-clay hover:bg-clay hover:text-white whitespace-nowrap px-8 py-4 w-full md:w-auto text-center"
                >
                  INQUIRE

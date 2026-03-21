@@ -88,7 +88,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="mt-14">
-            <a href="https://wa.me/15089393030" target="_blank" className="btn btn-primary px-12 py-5 no-underline">Text Kim Directly</a>
+            <a href="sms:+15089393030" className="btn btn-primary px-12 py-5 no-underline">Text Kim Directly</a>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ const About: React.FC = () => {
       <div className="bg-clay py-24 text-center text-white px-8">
         <h2 className="serif text-4xl mb-6 font-light">Come Play With Us</h2>
         <p className="text-white/80 font-light mb-10 max-w-sm mx-auto">Courts are open. Kim is ready. Martha's Vineyard is waiting.</p>
-        <a href="https://wa.me/15089393030" target="_blank" className="btn btn-white !text-clay px-12 py-5 no-underline shadow-2xl">Get in Touch Today</a>
+        <a href="sms:+15089393030" className="btn btn-white !text-clay px-12 py-5 no-underline shadow-2xl">Get in Touch Today</a>
       </div>
     </div>
   );

@@ -68,9 +68,7 @@ const Navbar: React.FC = () => {
             </Link>
           ))}
           <a 
-            href="https://wa.me/15089393030" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+            href="sms:+15089393030" 
             style={{ 
               backgroundColor: '#b56c4d', 
               color: 'white', 
@@ -143,7 +141,7 @@ const Navbar: React.FC = () => {
           </Link>
         ))}
         <a 
-          href="https://wa.me/15089393030" 
+          href="sms:+15089393030" 
           style={{ 
             backgroundColor: '#b56c4d', 
             color: 'white', 
