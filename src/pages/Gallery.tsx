@@ -7,7 +7,6 @@ const GalleryPage: React.FC = () => {
     { span: 'md:row-span-2', title: 'Seasonal Mixer at Island Inn', url: '/gallery/gallery-1.jpg', color: '#1a3a2a', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Summer Family Tennis', url: '/gallery/gallery-2.jpg', color: '#c96b3a', pos: 'top' },
     { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
-    { span: '', title: 'Morning Drills with the Girls', url: '/gallery/gallery-4.jpg', color: '#0d1f16', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 10%' },
     { span: '', title: 'Island Inn Pool Side', url: '/gallery/pool-side.jpg', color: '#1a3a5a', pos: 'center' },
     { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },

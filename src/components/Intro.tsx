@@ -22,23 +22,12 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <div className="bg-[#1a3a2a] rounded-sm overflow-hidden shadow-2xl relative aspect-[4/3]">
-            <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-80">
-              <rect width="480" height="360" fill="#163020"/>
-              <rect x="60" y="40" width="360" height="280" fill="#1e5c38" rx="2"/>
-              <rect x="60" y="40" width="360" height="280" fill="none" stroke="white" strokeWidth="2.5"/>
-              <line x1="240" y1="40" x2="240" y2="320" stroke="white" strokeWidth="2.5"/>
-              <line x1="60" y1="180" x2="420" y2="180" stroke="white" strokeWidth="2.5"/>
-              <rect x="100" y="100" width="140" height="160" fill="none" stroke="white" strokeWidth="1.5"/>
-              <rect x="240" y="100" width="140" height="160" fill="none" stroke="white" strokeWidth="1.5"/>
-              <circle cx="310" cy="130" r="10" fill="#c5e84b" />
-              <rect x="0" y="0" width="60" height="360" fill="#0d2a1a"/>
-              <rect x="420" y="0" width="60" height="360" fill="#0d2a1a"/>
-              <rect x="0" y="0" width="480" height="40" fill="#0d2a1a"/>
-              <rect x="0" y="320" width="480" height="40" fill="#0d2a1a"/>
-              <ellipse cx="30" cy="150" rx="18" ry="22" fill="#153d20" />
-              <ellipse cx="450" cy="220" rx="18" ry="22" fill="#153d20" />
-            </svg>
+          <div className="bg-[#1a3a2a] rounded-sm overflow-hidden shadow-2xl relative aspect-[4/3] border border-forest/10">
+            <img 
+              src="/tennis-heart.jpg" 
+              alt="Aerial sunset view of Island Inn Tennis Club" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
           </div>
         </motion.div>
 

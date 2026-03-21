@@ -32,7 +32,7 @@ const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1050px] mx-auto">
           {displayReviews.map((rev, i) => (
             <motion.div 
               key={i} 
@@ -40,16 +40,16 @@ const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className={`p-8 md:p-10 shadow-premium border rounded-sm flex flex-col aspect-[4/3] sm:aspect-square ${
+              className={`p-8 shadow-premium border rounded-sm flex flex-col aspect-[4/3] sm:aspect-square ${
                 isPreview ? 'bg-white/5 border-white/5' : 'bg-white border-clay/5'
               }`}
             >
-              <Quote size={24} className={`mb-10 opacity-30 ${isPreview ? 'text-gold' : 'text-clay'}`} strokeWidth={1} />
-              <p className={`text-base font-light italic leading-[2] flex-grow mb-12 ${isPreview ? 'text-white/80' : 'text-text/80'}`}>
+              <Quote size={20} className={`mb-6 opacity-30 ${isPreview ? 'text-gold' : 'text-clay'}`} strokeWidth={1} />
+              <p className={`text-[14px] font-light italic leading-[1.8] flex-grow mb-8 ${isPreview ? 'text-white/80' : 'text-text/80'}`}>
                 "{rev.text}"
               </p>
               
-              <div className={`mt-auto pt-10 border-t ${isPreview ? 'border-white/10' : 'border-clay/5'}`}>
+              <div className={`mt-auto pt-8 border-t ${isPreview ? 'border-white/10' : 'border-clay/5'}`}>
                 <div className="flex gap-1 mb-6">
                   {[...Array(rev.stars)].map((_, idx) => (
                     <Star key={idx} size={10} fill={isPreview ? 'var(--gold)' : 'var(--clay)'} className={isPreview ? 'text-gold' : 'text-clay'} />
