@@ -1,4 +1,4 @@
-`Iimport React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const GalleryPage: React.FC = () => {
@@ -8,9 +8,9 @@ const GalleryPage: React.FC = () => {
     { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
     { span: '', title: 'Morning Drills with the Girls', url: '/gallery/gallery-4.jpg', color: '#0d1f16', pos: 'center 20%' },
     { span: 'md:col-span-2', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 10%' },
-    { span: '', title: 'Island Inn Pool Side', icon: '🏊', color: '#1a3a5a' },
+    { span: '', title: 'Island Inn Pool Side', icon: '\u{1F3CA}', color: '#1a3a5a' },
     { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },
-    { span: '', title: 'Tennis Pro Shop', icon: '🏪', color: '#2a5a3a' },
+    { span: '', title: 'Tennis Pro Shop', icon: '\u{1F3EA}', color: '#2a5a3a' },
   ];
 
   return (
@@ -20,12 +20,12 @@ const GalleryPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <section 
+      <section
         className="pt-40 pb-20 text-center relative overflow-hidden flex items-center justify-center px-10"
         style={{ backgroundColor: '#163020' }}
       >
-        <div 
-           className="absolute inset-0 z-0 opacity-40" 
+        <div
+           className="absolute inset-0 z-0 opacity-40"
            style={{ background: 'linear-gradient(135deg, rgba(13,31,22,1) 0%, rgba(26,58,42,0.8) 50%, rgba(181,108,77,0.3) 100%)' }}
         />
         <div className="w-full relative z-10 px-6 sm:px-10 flex flex-col items-center text-center">
@@ -50,37 +50,39 @@ const GalleryPage: React.FC = () => {
       <section className="section-padding bg-cream">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:auto-rows-[250px]">
-            {images.map((img, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className={`relative group bg-white overflow-hidden rounded-sm shadow-premium ${img.span}`}
-              >
-                {img.url ? (
-                  <img 
-                    src={img.url} 
-                    alt={img.title} 
-                    className="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
-                    style={{ objectPosition: (img as any).pos || 'center' }}
-                  />
-                ) : (
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center text-7xl transition-transform duration-1000 group-hover:scale-125"
-                    style={{ backgroundColor: img.color }}
-                  >
-                    <span className="opacity-40">{(img as any).icon}</span>
+            {images.map((img, i) => {
+              const classes = "relative group bg-white overflow-hidden rounded-sm shadow-premium " + (img.span || "");
+              return (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: i * 0.1 }}
+                  viewport={{ once: true }}
+                  className={classes}
+                >
+                  {img.url ? (
+                    <img
+                      src={img.url}
+                      alt={img.title}
+                      className="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                      style={{ objectPosition: img.pos || 'center' }}
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0 flex items-center justify-center text-7xl transition-transform duration-1000 group-hover:scale-125"
+                      style={{ backgroundColor: img.color }}
+                    >
+                      <span className="opacity-40">{(img as any).icon}</span>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-forest/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-8 text-center">
+                    <span className="text-[8px] font-bold tracking-[3px] uppercase text-gold mb-2">Featured Shot</span>
+                    <h3 className="serif text-xl font-light text-white">{img.title}</h3>
                   </div>
-                )}
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-forest/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-8 text-center">
-                  <span className="text-[8px] font-bold tracking-[3px] uppercase text-gold mb-2">Featured Shot</span>
-                  <h3 className="serif text-xl font-light text-white">{img.title}</h3>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
