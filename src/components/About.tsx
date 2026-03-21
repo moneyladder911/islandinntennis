@@ -93,10 +93,10 @@ const About: React.FC = () => {
             <div>
               <div className="space-y-8 text-light font-light leading-[1.8] text-[16px]">
                 <p>
-                  At the center of Island Inn Tennis is Kim — our head pro, matchmaker, and the heartbeat of the club. Kim brings professional-level coaching with a warm, island-relaxed approach that makes every player feel welcome.
+                  At the heart of Island Inn Tennis is Kim — the CEO, organizer, and driving force behind everything that happens on and off the courts. Kim manages the entire complex, from scheduling matches and organizing clinics to coordinating memberships and running events.
                 </p>
                 <p>
-                  Whether you're a guest staying for a week or a local who's played for decades, Kim will find you the right program, the right partner, and the right approach to love this sport even more.
+                  Whether you're looking to get into a social doubles game, sign your kids up for junior programs, or plan a private event — Kim is your single point of contact. She knows every player, every court, and every detail that makes this club special.
                 </p>
               </div>
               <div className="mt-10">
