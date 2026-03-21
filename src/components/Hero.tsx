@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
               textTransform: 'none',
               marginTop: '-8px'
             }}>Island Inn</span> 
-            way on Martha's Vineyard.
+            way in Oak Bluffs.
           </h2>
 
           {/* Buttons */}
