@@ -130,10 +130,10 @@ const PricingPage: React.FC = () => {
                 
                 <h3 className="serif text-2xl font-semibold text-forest mb-4 mt-2">{tier.title}</h3>
                 <div className="flex items-baseline gap-2 mb-8">
-                  <span className="text-[clamp(28px,4vw,48px)] font-light text-clay tracking-tighter leading-none">{tier.price}</span>
+                  <span className="text-[clamp(24px,3.5vw,40px)] font-light text-clay tracking-tighter leading-none">{tier.price}</span>
                   <span className="text-[9px] font-bold text-light uppercase tracking-[2px]">{tier.period}</span>
                 </div>
-                <p className="text-[13px] font-light text-light leading-relaxed mb-10 h-14 overflow-hidden">{tier.desc}</p>
+                <p className="text-[13px] font-light text-light leading-relaxed mb-10 min-h-[3rem]">{tier.desc}</p>
                 
                 <div className="space-y-4 mb-12 flex-grow">
                   {tier.features.map((feature, idx) => (
