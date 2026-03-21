@@ -46,13 +46,14 @@ const Hero: React.FC = () => {
           <div 
             style={{ 
               border: '1px solid rgba(179, 147, 89, 0.9)', 
-              padding: '6px 20px', 
+              padding: '8px 20px', 
               marginTop: '15px',
               marginBottom: '32px' 
             }}
           >
-            <span style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '3px', color: '#b39359', textTransform: 'uppercase' }}>
-              The Best Tennis Club on Marthas Vineyard
+            <span style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '3px', color: '#b39359', textTransform: 'uppercase', lineHeight: '1.8' }} className="block sm:inline text-center">
+              The Best Tennis Club <br className="block sm:hidden" />
+              <span className="hidden sm:inline">On </span><span className="inline sm:hidden">on </span>Martha's Vineyard
             </span>
           </div>
 

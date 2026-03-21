@@ -40,7 +40,7 @@ const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className={`p-8 shadow-premium border rounded-sm flex flex-col aspect-[4/3] sm:aspect-square ${
+              className={`p-8 shadow-premium border rounded-sm flex flex-col h-auto md:aspect-square ${
                 isPreview ? 'bg-white/5 border-white/5' : 'bg-white border-clay/5'
               }`}
             >
