@@ -26,12 +26,9 @@ const Home: React.FC = () => {
 
       {/* 3. About Us snippet with Kim's Picture */}
       <MeetKim />
-      
-      {/* 4. Summer Memberships */}
-      <Memberships />
 
-      {/* Stats Bar */}
-      <div className="bg-forest py-12 flex justify-center gap-20 flex-wrap px-8 border-t border-white/5">
+      {/* Stats Bar (Transition) */}
+      <div className="bg-forest py-12 flex justify-center gap-20 flex-wrap px-8">
         <div className="text-center">
           <div className="serif text-[42px] font-semibold text-gold leading-none">3</div>
           <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Courts Available</div>
@@ -50,8 +47,11 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* 5. Schedule Little Section */}
+      {/* 4. Schedule Little Section (Value) */}
       <SchedulePreview />
+
+      {/* 5. Summer Memberships (Costs) */}
+      <Memberships />
 
       {/* 6. Programs Section */}
       <Programs isPreview={true} showPage={showPage} />

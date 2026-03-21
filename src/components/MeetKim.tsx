@@ -10,11 +10,11 @@ const MeetKim: React.FC = () => {
       <div className="container px-8 lg:px-12 max-w-[1200px] mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div 
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="aspect-[4/5] md:aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border border-forest/5"
+            className="order-1 md:order-2 aspect-[4/5] md:aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border border-forest/5"
           >
             <img 
               src="/kim-portrait.jpg" 
@@ -24,10 +24,11 @@ const MeetKim: React.FC = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
+            className="order-2 md:order-1"
           >
             <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">WHO WE ARE</span>
             <h2 className="serif text-[clamp(36px,5vw,48px)] font-light text-forest leading-tight mb-8">Meet <em className="italic text-clay">Kim</em></h2>

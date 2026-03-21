@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         <div className="lg:pl-8">
           <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-gold/60 mb-8 pt-1">Navigation</h4>
           <ul className="space-y-4 list-none p-0 m-0">
-            {['Home', 'About', 'Pricing', 'Schedule', 'Programs', 'Gallery', 'Contact', 'Terms'].map((item) => (
+            {['Home', 'About', 'Schedule', 'Pricing', 'Programs', 'Gallery', 'Contact', 'Terms'].map((item) => (
               <li key={item}>
                 <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-[13px] font-light text-white/40 hover:text-white transition-all duration-300 no-underline inline-block">
                   {item === 'Terms' ? 'Club Terms' : item}
