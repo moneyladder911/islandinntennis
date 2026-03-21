@@ -126,10 +126,21 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <div className="bg-clay py-24 text-center text-white px-8">
-        <h2 className="serif text-4xl mb-6 font-light">Come Play With Us</h2>
-        <p className="text-white/80 font-light mb-10 max-w-sm mx-auto">Courts are open. Kim is ready. Martha's Vineyard is waiting.</p>
-        <a href="sms:+15089393030" className="btn btn-white !text-clay px-12 py-5 no-underline shadow-2xl">Get in Touch Today</a>
+      <div className="relative py-32 text-center text-white px-8 overflow-hidden bg-clay">
+        <div className="absolute inset-0 z-0">
+          <img src="/island-inn-real.webp" alt="Island Inn Tennis Club" className="w-full h-full object-cover object-center opacity-40 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-gradient-to-b from-clay/40 to-clay" />
+        </div>
+        <div className="relative z-10 max-w-2xl mx-auto">
+          <span className="text-[10px] font-bold tracking-[4px] uppercase text-gold mb-6 block">YOUR COURT AWAITS</span>
+          <h2 className="serif text-5xl md:text-6xl mb-8 font-light leading-tight">Come Play <em className="italic font-normal">With Us</em></h2>
+          <p className="text-white/80 font-light text-lg mb-10 max-w-md mx-auto leading-relaxed">
+            The courts are open. Kim is ready to match you. Martha's Vineyard is waiting.
+          </p>
+          <a href="sms:+15089393030" className="inline-block bg-white text-clay hover:bg-forest hover:text-white text-[11px] font-bold tracking-[3px] uppercase px-12 py-5 transition-all duration-300 shadow-2xl no-underline">
+            Get in Touch Today
+          </a>
+        </div>
       </div>
     </div>
   );
