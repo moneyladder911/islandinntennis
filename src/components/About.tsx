@@ -52,24 +52,26 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">WHERE WE ARE</span>
-            <h2 className="serif text-5xl font-light text-forest leading-tight mb-8">The <em className="italic text-clay">Perfect Setting</em></h2>
-            <p className="text-[15px] font-light text-light leading-[1.8] mb-8">
-              Set on 5+ acres at the Island Inn on Beach Road in Oak Bluffs, our courts sit adjacent to Farm Neck Golf Course, steps from the bicycle path to Edgartown, and within walking distance of Inkwell Beach and State Beach.
-            </p>
-            <p className="text-[15px] font-light text-light leading-[1.8]">
-              The Island Inn is a 51-suite resort with heated pool, playground, and conference facilities. Tennis is at its heart, with a Pro Shop on-site and professional instruction every day.
-            </p>
+            <span className="text-[10px] font-bold tracking-[4px] uppercase text-gold mb-6 block">WHERE WE ARE</span>
+            <h2 className="serif text-5xl font-light text-forest leading-tight mb-8">The <em className="italic text-gold font-normal">Perfect Setting</em></h2>
+            <div className="space-y-6 text-light font-light leading-relaxed text-[15px] max-w-lg">
+              <p>
+                We don't just have the best courts on Martha's Vineyard — we have the best energy. Located in the heart of Oak Bluffs, the Island Inn is where tennis is actually at home. 
+              </p>
+              <p>
+                Just steps away from the iconic Nomans, we are the ultimate pre-lunch match destination. Swing by for a high-intensity session, then head over for live music and a drink.
+              </p>
+              <p>
+                Whether you're coming off the bike path from Edgartown or walking up from Inkwell Beach, you’re coming for the love of the game. With a full Pro Shop and elite instruction every day, this is where the island plays.
+              </p>
+            </div>
           </motion.div>
-          <div className="bg-forest aspect-[4/3] rounded-sm overflow-hidden shadow-2xl relative border border-forest/5">
-            <svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute inset-0">
-              <rect width="460" height="340" fill="#1a3a2a"/>
-              <rect x="0" y="0" width="460" height="160" fill="#1a3a5a"/>
-              <rect x="60" y="120" width="160" height="100" fill="#2a5a3a" rx="2"/>
-              <rect x="0" y="250" width="460" height="90" fill="#0d2a1a"/>
-              <ellipse cx="50" cy="240" rx="20" ry="26" fill="#1e5c38"/>
-              <ellipse cx="420" cy="235" rx="18" ry="22" fill="#1a5030"/>
-            </svg>
+          <div className="bg-forest aspect-[4/3] rounded-sm overflow-hidden shadow-2xl relative border border-forest/5 group">
+            <img 
+              src="/gallery/nomans-garden.jpg" 
+              alt="Nomans Restaurant and Garden next to Island Inn" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
           </div>
         </div>
       </section>
