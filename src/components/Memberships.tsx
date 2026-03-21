@@ -12,9 +12,9 @@ const Memberships: React.FC = () => {
       features: [
         "Play FREE until November 1st",
         "Up to 3 sessions per week",
+        "Island Inn Pool Access",
         "Preferred Booking Times",
-        "Invitation to Member Mixers",
-        "Seasonal Membership Offer"
+        "Invitation to Member Mixers"
       ],
       cta: "Grab Early Bird",
       highlight: false
@@ -27,9 +27,9 @@ const Memberships: React.FC = () => {
       features: [
         "Play FREE until November 1st",
         "Play unlimited times",
+        "Island Inn Pool Access",
         "10% Off Private Lessons",
-        "Invite to Season Finals",
-        "Full Resort Access (Island Inn)"
+        "Invite to Season Finals"
       ],
       cta: "Become a Member",
       highlight: true
@@ -42,9 +42,9 @@ const Memberships: React.FC = () => {
       features: [
         "Whole Family Plays FREE",
         "Unlimited Family Bookings",
+        "Island Inn Pool Access",
         "Priority Junior Clinic Entry",
-        "Family Mixer Invites",
-        "Available until November 1st"
+        "Family Mixer Invites"
       ],
       cta: "Join as Family",
       highlight: false

@@ -59,11 +59,11 @@ const Hero: React.FC = () => {
           <h1 
             style={{ 
               fontFamily: "'Cormorant Garamond', serif", 
-              fontSize: 'clamp(48px, 8vw, 96px)', 
+              fontSize: 'clamp(36px, 6vw, 72px)', 
               fontWeight: 300, 
               lineHeight: 1.1, 
               marginBottom: '32px',
-              maxWidth: '1000px',
+              maxWidth: '800px',
               color: '#fff'
             }}
           >
