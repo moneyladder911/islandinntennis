@@ -27,6 +27,7 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
               src="/tennis-heart.jpg" 
               alt="Aerial sunset view of Island Inn Tennis Club" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
         </motion.div>

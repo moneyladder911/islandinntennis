@@ -68,6 +68,7 @@ const GalleryPage: React.FC = () => {
                       alt={img.title}
                       className="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
                       style={{ objectPosition: img.pos || 'center' }}
+                      loading="lazy"
                     />
                   ) : (
                     <div

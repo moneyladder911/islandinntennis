@@ -65,6 +65,7 @@ const Home: React.FC = () => {
               src="/marthas-vineyard-sunset.jpg" 
               alt="Martha's Vineyard sunset view with harbor and lighthouse"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </a>
         </div>
