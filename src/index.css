@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #163020;
+  --color-clay: #b56c4d;
+  --color-sand: #ece3d4;
+  --color-cream: #fcfaf7;
+  --color-dark: #0a1a12;
+  --color-gold: #b39359;
+  --color-mist: #eef3ef;
+  --color-text: #2c3630;
+  --color-light: #7a8a7e;
+  
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfaf7;
+    color: #2c3630;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 md:py-40;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center py-5 px-10 text-[10px] font-bold tracking-[3px] uppercase rounded-sm cursor-pointer transition-all duration-500 no-underline shadow-lg;
+  }
+
+  .btn-primary {
+    background-color: #b56c4d;
+    color: white;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .btn-white {
+    background-color: white;
+    color: #b56c4d;
+  }
+}
+
+/* Custom Utilities */
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.012;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.safe-area-bottom {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom)) !important;
+}
