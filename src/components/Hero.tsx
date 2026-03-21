@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <section 
-      style={{ 
-        height: '100vh', 
-        width: '100%', 
-        backgroundColor: '#163020', 
-        position: 'relative', 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
-        textAlign: 'center', 
+    <section
+      style={{
+        height: '100vh',
+        width: '100%',
+        backgroundColor: '#163020',
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
         overflow: 'hidden',
         color: '#fff',
         padding: '0 20px'
@@ -22,11 +22,11 @@ const Hero: React.FC = () => {
     >
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0 bg-forest overflow-hidden">
-        <motion.img 
+        <motion.img
           initial={{ scale: 1 }}
           animate={{ scale: 1.05 }}
           transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-          src="/island-inn-real.webp" 
+          src="/island-inn-real.webp"
           alt="Island Inn Tennis Courts Aerial View"
           className="w-full h-full object-cover opacity-60"
           fetchPriority="high"
@@ -43,10 +43,10 @@ const Hero: React.FC = () => {
           className="flex flex-col items-center justify-center min-h-[80vh]"
         >
           {/* Tagline */}
-          <div 
-            style={{ 
-              border: '1px solid rgba(179, 147, 89, 0.9)', 
-              padding: '8px 24px', 
+          <div
+            style={{
+              border: '1px solid rgba(179, 147, 89, 0.9)',
+              padding: '8px 24px',
               marginTop: '15px',
               marginBottom: '40px',
               backgroundColor: 'rgba(22, 48, 32, 0.4)'
@@ -58,12 +58,12 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Main Heading (H1) */}
-          <h1 
-            style={{ 
-              fontFamily: "'Cormorant Garamond', serif", 
-              fontSize: 'clamp(38px, 6.5vw, 76px)', 
-              fontWeight: 300, 
-              lineHeight: 1.1, 
+          <h1
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: 'clamp(38px, 6.5vw, 76px)',
+              fontWeight: 300,
+              lineHeight: 1.1,
               marginBottom: '32px',
               maxWidth: '900px',
               color: '#fff'
@@ -74,11 +74,11 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Sub-Heading (H2) */}
-          <h2 
-            style={{ 
+          <h2
+            style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: 'clamp(24px, 4vw, 36px)', 
-              fontWeight: 300, 
+              fontSize: 'clamp(24px, 4vw, 36px)',
+              fontWeight: 300,
               color: 'rgba(255, 255, 255, 0.9)',
               marginBottom: '64px',
               display: 'flex',
@@ -90,14 +90,14 @@ const Hero: React.FC = () => {
               lineHeight: '1.2'
             }}
           >
-            Play the 
-            <span style={{ 
-              fontFamily: "'Pinyon Script', cursive", 
-              fontSize: '1.45em', 
-              color: '#b39359', 
+            Play the
+            <span style={{
+              fontFamily: "'Pinyon Script', cursive",
+              fontSize: '1.45em',
+              color: '#b39359',
               textTransform: 'none',
               marginTop: '-8px'
-            }}>Island Inn</span> 
+            }}>Island Inn</span>
             way in Oak Bluffs.
           </h2>
 
@@ -105,27 +105,27 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-24">
             <a 
               href="sms:+14079239047" 
-              className="bg-white text-[#163020] px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white hover:bg-transparent hover:text-white transition-all duration-300 no-underline"
+              className="bg-white text-[#163020] px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white hover:bg-transparent hover:text-white transition-all duration-300 no-underline shadow-xl"
               style={{ minWidth: '280px' }}
             >
               TEXT TO PLAY
             </a>
             <Link 
               to="/pricing" 
-              className="bg-transparent text-white px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white/30 hover:bg-white hover:text-[#163020] transition-all duration-300 no-underline"
+              className="bg-transparent text-white px-12 py-5 text-[11px] font-bold tracking-[4px] uppercase border border-white/40 hover:bg-white hover:text-[#163020] transition-all duration-300 no-underline"
               style={{ minWidth: '280px' }}
             >
-              START YOUR MATCH
+              VIEW MEMBERSHIPS
             </Link>
           </div>
 
           {/* The Bottom Line */}
-          <div 
-            style={{ 
-              fontSize: '11px', 
-              fontWeight: 500, 
-              letterSpacing: '5px', 
-              color: 'rgba(255, 255, 255, 0.4)', 
+          <div
+            style={{
+              fontSize: '11px',
+              fontWeight: 500,
+              letterSpacing: '5px',
+              color: 'rgba(255, 255, 255, 0.4)',
               textTransform: 'uppercase',
             }}
           >
@@ -134,7 +134,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
