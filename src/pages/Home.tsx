@@ -27,25 +27,7 @@ const Home: React.FC = () => {
       {/* 3. About Us snippet with Kim's Picture */}
       <MeetKim />
 
-      {/* Stats Bar (Transition) */}
-      <div className="bg-forest py-12 flex justify-center gap-20 flex-wrap px-8">
-        <div className="text-center">
-          <div className="serif text-[42px] font-semibold text-gold leading-none">3</div>
-          <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Courts Available</div>
-        </div>
-        <div className="text-center">
-          <div className="serif text-[42px] font-semibold text-gold leading-none">All</div>
-          <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Skill Levels</div>
-        </div>
-        <div className="text-center">
-          <div className="serif text-[42px] font-semibold text-gold leading-none">Pro</div>
-          <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Instruction</div>
-        </div>
-        <div className="text-center">
-          <div className="serif text-[42px] font-semibold text-gold leading-none">MV</div>
-          <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Island Life</div>
-        </div>
-      </div>
+
 
       {/* 4. Schedule Little Section (Value) */}
       <SchedulePreview />

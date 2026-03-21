@@ -11,6 +11,26 @@ const SchedulePreview: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-forest/80 to-transparent" />
       
       <div className="container relative z-10 px-8 max-w-[800px] mx-auto">
+        {/* Stats Bar Integrated */}
+        <div className="flex justify-center gap-12 sm:gap-20 flex-wrap mb-24 pb-16 border-b border-white/10">
+          <div className="text-center">
+            <div className="serif text-[42px] font-semibold text-gold leading-none">3</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Courts Available</div>
+          </div>
+          <div className="text-center">
+            <div className="serif text-[42px] font-semibold text-gold leading-none">All</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Skill Levels</div>
+          </div>
+          <div className="text-center">
+            <div className="serif text-[42px] font-semibold text-gold leading-none">Pro</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Instruction</div>
+          </div>
+          <div className="text-center">
+            <div className="serif text-[42px] font-semibold text-gold leading-none">MV</div>
+            <div className="text-[9px] font-bold tracking-[3px] uppercase text-white/50 mt-3">Island Life</div>
+          </div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
