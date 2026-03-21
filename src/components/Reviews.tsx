@@ -8,15 +8,15 @@ interface ReviewsProps {
 }
 
 const reviewsData = [
-  { text: "Best tennis experience I've had on any vacation. Kim is an outstanding coach and made every session feel personal and fun. The courts are gorgeous.", author: "SARAH M.", date: "Summer 2024", tag: "PRIVATE LESSONS", stars: 5 },
-  { text: "My kids went from never holding a racket to rallying confidently in one week. We'll be booking again next summer without question.", author: "THE RODRIGUEZ FAMILY", date: "July 2024", tag: "JUNIOR PROGRAM", stars: 5 },
-  { text: "Texted Kim, had a match set up within the hour. The courts are well-maintained and the setting next to the Inn is just beautiful.", author: "JAMES T.", date: "August 2024", tag: "ON-DEMAND MATCH", stars: 5 },
-  { text: "Best tennis atmosphere in Oak Bluffs. Just behind Nomans so you can grab a drink after play!", author: "MIKE T.", date: "Sept 2024", tag: "ISLAND LIFE", stars: 5 },
-  { text: "My daughter loved the junior program. Fun, positive and she actually learned proper technique.", author: "ELENA R.", date: "July 2024", tag: "JUNIOR PROGRAM", stars: 5 },
-  { text: "We book session packages every summer. The convenience and quality of coaching is unmatched.", author: "DAVID L.", date: "August 2024", tag: "MULTI-SESSION", stars: 5 },
-  { text: "Incredible value for the Vineyard. Clean courts, great coaches, and a very friendly community.", author: "ANETTE S.", date: "June 2024", tag: "COMMUNITY", stars: 5 },
-  { text: "Kim's attention to detail on my serve was a game changer. Can't wait for next season!", author: "ROBERT K.", date: "July 2024", tag: "PRIVATE LESSONS", stars: 5 },
-  { text: "Great matchmaking! Found players at my exact level every time I texted. Super easy.", author: "LISA M.", date: "Aug 2024", tag: "ON-DEMAND", stars: 4 },
+  { text: "Best tennis experience I've had on any vacation. Kim is an outstanding coach and made every session feel personal and fun. The courts are gorgeous.", author: "MEGAN", date: "Summer 2025", tag: "PRIVATE LESSONS", stars: 5 },
+  { text: "We book session packages every summer. The convenience and quality of coaching is unmatched. Huge thanks to Kim and the team.", author: "DAVID", date: "July 2025", tag: "MULTI-SESSION", stars: 5 },
+  { text: "Texted Kim, had a match set up within the hour. The courts are well-maintained and the setting next to the Inn is just beautiful.", author: "SHAWN", date: "August 2025", tag: "ON-DEMAND MATCH", stars: 5 },
+  { text: "My kids went from never holding a racket to rallying confidently in one week. We'll be booking again next summer without question.", author: "PAULA", date: "August 2025", tag: "JUNIOR PROGRAM", stars: 5 },
+  { text: "Incredible value for the Vineyard. Clean courts, great coaches, and a very friendly community. A true hidden gem in Oak Bluffs.", author: "MICHEAL", date: "June 2025", tag: "COMMUNITY", stars: 5 },
+  { text: "Best tennis atmosphere in Oak Bluffs. Just behind Nomans so you can grab a drink after play! Always a great time.", author: "MIKE", date: "Sept 2025", tag: "ISLAND LIFE", stars: 5 },
+  { text: "My daughter loved the junior program. Fun, positive and she actually learned proper technique. Couldn't recommend it enough.", author: "KELLEY", date: "July 2025", tag: "JUNIOR PROGRAM", stars: 5 },
+  { text: "Great matchmaking! Found players at my exact level every time I texted. Super easy and took all the stress out of organizing.", author: "MIKA", date: "Aug 2025", tag: "ON-DEMAND", stars: 5 },
+  { text: "Kim's attention to detail on my serve was a game changer. Can't wait for next season. The best coaching I've ever received.", author: "ANDREW", date: "Summer 2025", tag: "PRIVATE LESSONS", stars: 5 },
 ];
 
 const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
