@@ -76,19 +76,33 @@ const About: React.FC = () => {
 
       {/* Pro Section */}
       <section className="py-24 bg-cream overflow-hidden">
-        <div className="container max-w-4xl mx-auto px-8 text-center">
-          <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">WHO WE ARE</span>
-          <h2 className="serif text-5xl font-light text-forest leading-tight mb-10">Meet <em className="italic text-clay">Kim</em></h2>
-          <div className="space-y-8 text-light font-light leading-[1.8] text-lg max-w-2xl mx-auto">
-            <p>
-              At the center of Island Inn Tennis is Kim - our head pro, matchmaker, and the heartbeat of the club. Kim brings professional-level coaching with a warm, island-relaxed approach that makes every player feel welcome.
-            </p>
-            <p>
-              Whether you're a guest staying for a week or a local who's played for decades, Kim will find you the right program, the right partner, and the right approach to love this sport even more.
-            </p>
+        <div className="container max-w-[1100px] mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-4 block">WHO WE ARE</span>
+            <h2 className="serif text-5xl font-light text-forest leading-tight">Meet <em className="italic text-clay">Kim</em></h2>
           </div>
-          <div className="mt-14">
-            <a href="sms:+15089393030" className="btn btn-primary px-12 py-5 no-underline">Text Kim Directly</a>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border border-forest/5">
+              <img 
+                src="/kim-portrait.jpg" 
+                alt="Kim - Head Tennis Pro at Island Inn Tennis Club"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 15%' }}
+              />
+            </div>
+            <div>
+              <div className="space-y-8 text-light font-light leading-[1.8] text-[16px]">
+                <p>
+                  At the center of Island Inn Tennis is Kim — our head pro, matchmaker, and the heartbeat of the club. Kim brings professional-level coaching with a warm, island-relaxed approach that makes every player feel welcome.
+                </p>
+                <p>
+                  Whether you're a guest staying for a week or a local who's played for decades, Kim will find you the right program, the right partner, and the right approach to love this sport even more.
+                </p>
+              </div>
+              <div className="mt-10">
+                <a href="sms:+15089393030" className="btn btn-primary px-12 py-5 no-underline">Text Kim Directly</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
