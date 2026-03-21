@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
           alignItems: 'center', 
           justifyContent: 'center', 
           gap: '32px',
-what haop          padding: '60px 40px',
+          padding: '60px 40px',
           opacity: isOpen ? 1 : 0,
           visibility: isOpen ? 'visible' : 'hidden',
           transition: 'all 0.5s ease-in-out',

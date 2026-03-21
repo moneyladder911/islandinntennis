@@ -11,26 +11,26 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#0d1a12] text-white pt-16 pb-24 md:pb-10 relative overflow-hidden border-t border-white/5">
-      {/* Newsletter Section - Smaller & More Compact */}
-      <div className="container mb-16 px-6">
-        <div className="bg-[#1a3a2a] p-10 md:p-12 rounded-sm flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+      {/* Newsletter Section - Refined to match image */}
+      <div className="container mb-24 px-6 md:px-12">
+        <div className="bg-[#12261b] p-10 md:p-14 rounded-sm flex flex-col lg:flex-row items-center justify-between gap-10 relative overflow-hidden border border-white/5">
           <div className="relative z-10 max-w-lg text-center lg:text-left">
-            <span className="text-[9px] font-bold tracking-[4px] uppercase text-gold mb-3 block">Newsletter</span>
-            <h3 className="serif text-3xl mb-3 font-light leading-tight">Stay in the loop.</h3>
-            <p className="text-white/40 text-sm font-light leading-relaxed">Join our inner circle for seasonal opening dates and island clinics.</p>
+            <span className="text-[10px] font-bold tracking-[6em] uppercase text-gold/60 mb-5 block scale-[0.9] origin-left">NEWSLETTER</span>
+            <h3 className="serif text-4xl mb-4 font-light leading-tight text-white/95">Stay in the loop.</h3>
+            <p className="text-white/40 text-[15px] font-light leading-relaxed">Join our inner circle for seasonal opening dates and island clinics.</p>
           </div>
-          <div className="relative z-10 w-full lg:w-auto min-w-[300px] md:min-w-[360px]">
-            <form className="flex flex-col sm:flex-row gap-2" onSubmit={(e) => e.preventDefault()}>
+          <div className="relative z-10 w-full lg:w-auto min-w-[320px] md:min-w-[420px]">
+            <form className="flex flex-col sm:flex-row gap-0 group border border-white/10 overflow-hidden rounded-sm" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
                 placeholder="Email address..." 
-                className="flex-grow p-4 bg-white/5 border border-white/10 text-white outline-none text-sm placeholder:text-white/20"
+                className="flex-grow p-5 bg-white/[0.03] text-white outline-none text-sm placeholder:text-white/20 border-none transition-all focus:bg-white/[0.07]"
               />
               <button 
                 type="submit"
-                className="btn btn-primary !py-4 px-8 text-[11px] flex items-center justify-center gap-2 group"
+                className="bg-[#b56c4d] hover:bg-[#c96b3a] text-white px-10 py-5 text-[11px] font-bold tracking-[3px] flex items-center justify-center gap-3 transition-colors uppercase border-none cursor-pointer"
               >
-                JOIN <Send size={12} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                JOIN <Send size={14} className="opacity-80" />
               </button>
             </form>
           </div>
@@ -39,23 +39,28 @@ const Footer: React.FC = () => {
 
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 px-6">
         {/* Brand */}
-        <div>
-          <span className="serif text-2xl font-semibold tracking-wide block text-white/90">Island Inn Tennis</span>
-          <span className="text-[8px] font-bold text-gold/60 tracking-[3px] uppercase mt-2 block">Oak Bluffs · Martha's Vineyard</span>
-          <div className="flex gap-4 mt-8">
-            <a href="https://www.instagram.com/islandinntennismv/" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-gold transition-colors"><Instagram size={16} /></a>
-            <a href="https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-gold transition-colors"><Facebook size={16} /></a>
-            <a href="https://wa.me/15089393030" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-gold transition-colors"><MessageSquare size={16} /></a>
+        <div className="lg:col-span-1">
+          <div className="mb-6">
+            <span className="serif text-2xl font-light tracking-wide block text-white/95">Island Inn Tennis</span>
+            <span className="text-[9px] font-bold text-gold/40 tracking-[4px] uppercase mt-3 block">Oak Bluffs · Martha's Vineyard</span>
+          </div>
+          <p className="text-[13px] font-light text-white/30 leading-relaxed max-w-[240px] mb-8">
+            The premier tennis destination on Martha's Vineyard. High-performance instruction in a luxury resort setting.
+          </p>
+          <div className="flex gap-6 mt-2">
+            <a href="https://www.instagram.com/islandinntennismv/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Instagram size={18} /></a>
+            <a href="https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Facebook size={18} /></a>
+            <a href="https://wa.me/15089393030" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><MessageSquare size={18} /></a>
           </div>
         </div>
 
         {/* Links */}
-        <div>
-          <h4 className="text-[10px] font-bold tracking-[3px] uppercase text-gold/80 mb-6">Navigate</h4>
-          <ul className="space-y-3 list-none p-0 m-0">
+        <div className="lg:pl-8">
+          <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-gold/60 mb-8 pt-1">Navigation</h4>
+          <ul className="space-y-4 list-none p-0 m-0">
             {['Home', 'Programs', 'Pricing', 'Schedule', 'About', 'Gallery', 'Contact', 'Terms'].map((item) => (
               <li key={item}>
-                <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-xs font-light text-white/40 hover:text-gold transition-colors no-underline">
+                <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="text-[13px] font-light text-white/40 hover:text-white transition-all duration-300 no-underline inline-block">
                   {item === 'Terms' ? 'Club Terms' : item}
                 </Link>
               </li>
@@ -63,33 +68,40 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Info */}
-        <div>
-          <h4 className="text-[10px] font-bold tracking-[3px] uppercase text-gold/80 mb-6">Connect</h4>
-          <ul className="space-y-3 list-none p-0 m-0">
-            {['Private Lessons', 'Membership', 'Junior Program', 'On-Demand'].map((item) => (
-              <li key={item}>
-                <Link to="/programs" className="text-xs font-light text-white/40 hover:text-gold no-underline">{item}</Link>
+        {/* Programs */}
+        <div className="lg:pl-4">
+          <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-gold/60 mb-8 pt-1">Experiences</h4>
+          <ul className="space-y-4 list-none p-0 m-0">
+            {[
+              { name: 'Private Lessons', path: '/programs' },
+              { name: 'Seasonal Membership', path: '/pricing' },
+              { name: 'Junior Academy', path: '/programs' },
+              { name: 'On-Demand Play', path: '/schedule' }
+            ].map((item) => (
+              <li key={item.name}>
+                <Link to={item.path} className="text-[13px] font-light text-white/40 hover:text-white transition-all duration-300 no-underline inline-block">{item.name}</Link>
               </li>
             ))}
           </ul>
         </div>
 
         {/* Contact Info */}
-        <div>
-          <h4 className="text-[10px] font-bold tracking-[3px] uppercase text-gold/80 mb-6">Find Us</h4>
-          <ul className="space-y-4 list-none p-0 m-0">
-            <li className="flex gap-3 text-xs font-light text-white/40 leading-relaxed">
-              <MapPin size={14} className="text-gold shrink-0" />
-              <span>30 Island Inn Road, Oak Bluffs</span>
+        <div className="lg:pl-4">
+          <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-gold/60 mb-8 pt-1">Location</h4>
+          <ul className="space-y-6 list-none p-0 m-0">
+            <li className="flex gap-4 text-[13px] font-light text-white/40 leading-relaxed group">
+              <MapPin size={16} className="text-gold/60 shrink-0 mt-0.5 group-hover:text-gold transition-colors" />
+              <span>30 Island Inn Road,<br />Oak Bluffs, MA 02557</span>
             </li>
-            <li className="flex gap-3 text-xs font-light text-white/40">
-              <Phone size={14} className="text-gold shrink-0" />
-              <a href="tel:15086932002" className="hover:text-gold no-underline color-inherit text-white/40">(508) 693-2002</a>
+            <li className="flex gap-4 text-[13px] font-light text-white/40 group">
+              <Phone size={16} className="text-gold/60 shrink-0 group-hover:text-gold transition-colors" />
+              <a href="tel:15086932002" className="hover:text-white no-underline color-inherit transition-all">(508) 693-2002</a>
             </li>
-            <li className="flex gap-3 text-xs font-bold text-white/90">
-              <MessageSquare size={14} className="text-[#25D366] shrink-0" />
-              <a href="https://wa.me/15089393030" target="_blank" rel="noopener noreferrer" className="hover:text-gold no-underline uppercase tracking-widest text-[#25D366]">WhatsApp Kim</a>
+            <li className="flex gap-4 items-center">
+              <div className="w-8 h-8 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+                <MessageSquare size={14} className="text-[#25D366]" />
+              </div>
+              <a href="https://wa.me/15089393030" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold uppercase tracking-[2px] text-[#25D366] hover:text-white transition-all no-underline">WhatsApp Kim</a>
             </li>
           </ul>
         </div>

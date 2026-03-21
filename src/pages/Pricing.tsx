@@ -7,7 +7,7 @@ const PricingPage: React.FC = () => {
   const tiers = [
     {
       title: 'Private Lessons',
-      price: '$120',
+      price: '$100-$150',
       period: 'per hour',
       desc: 'One-on-one coaching tailored to your level.',
       features: [
@@ -21,9 +21,9 @@ const PricingPage: React.FC = () => {
     },
     {
       title: 'Group Clinics',
-      price: '$45',
-      period: 'per session',
-      desc: 'High-energy drills with 4-8 players.',
+      price: '$35',
+      period: 'starting from',
+      desc: 'High-energy drills with 4-8 players typically held weekday mornings.',
       features: [
         'Skills development',
         'Drill-based learning',
@@ -91,7 +91,7 @@ const PricingPage: React.FC = () => {
               Invest in Your <em className="italic text-gold font-normal">Summer</em> of <em className="italic text-gold font-normal">Tennis</em>
             </h1>
             <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">
-              Simple, transparent rates for the Vineyard's most welcoming club. Join us for a single set or a whole season—all offers available through <em className="text-gold italic font-normal">November 2026</em>.
+              Simple, transparent rates for the Vineyard's most welcoming club. Join us for a single set or a whole season—all offers available through <em className="text-gold italic font-normal">November 1st, 2026</em>.
             </p>
             <div className="w-12 h-[1px] bg-gold/30 mx-auto" />
           </motion.div>
@@ -130,7 +130,7 @@ const PricingPage: React.FC = () => {
                 
                 <h3 className="serif text-2xl font-semibold text-forest mb-4 mt-2">{tier.title}</h3>
                 <div className="flex items-baseline gap-2 mb-8">
-                  <span className="text-5xl font-light text-clay tracking-tighter">{tier.price}</span>
+                  <span className="text-[clamp(28px,4vw,48px)] font-light text-clay tracking-tighter leading-none">{tier.price}</span>
                   <span className="text-[9px] font-bold text-light uppercase tracking-[2px]">{tier.period}</span>
                 </div>
                 <p className="text-[13px] font-light text-light leading-relaxed mb-10 h-14 overflow-hidden">{tier.desc}</p>
@@ -159,6 +159,41 @@ const PricingPage: React.FC = () => {
             ))}
           </div>
           
+          {/* Drop-in Rates Section */}
+          <div className="mt-20 grid md:grid-cols-2 gap-8 mb-20">
+            <div className="bg-forest/5 p-10 rounded-sm border border-forest/10">
+              <span className="text-[10px] font-bold tracking-[3px] uppercase text-gold mb-3 block">Guest Play</span>
+              <h3 className="serif text-3xl text-forest mb-4 font-light">Walk-in Court Rental</h3>
+              <p className="text-forest/60 text-[14px] font-light leading-relaxed mb-8 text-left">Available between clinic hours. Perfect for guests and locals looking for a quick set.</p>
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between items-center border-b border-forest/10 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-widest text-forest/70">Island Inn Hotel Guests</span>
+                  <span className="serif text-2xl text-clay">$25<small className="text-[10px] uppercase ml-1">/hr</small></span>
+                </div>
+                <div className="flex justify-between items-center border-b border-forest/10 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-widest text-forest/70">Public / Outsiders</span>
+                  <span className="serif text-2xl text-clay">$35<small className="text-[10px] uppercase ml-1">/hr</small></span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-forest p-10 rounded-sm border border-forest/10 text-white">
+              <span className="text-[10px] font-bold tracking-[3px] uppercase text-gold/60 mb-3 block">Social Play</span>
+              <h3 className="serif text-3xl text-white mb-4 font-light text-left">Social Match Play</h3>
+              <p className="text-white/60 text-[14px] font-light leading-relaxed mb-8 text-left">Join our organized round-robins and ladders. Perfect for solo players looking for a game.</p>
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/50">Members</span>
+                  <span className="serif text-2xl text-gold">FREE</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/50">Non-Members Drop-in</span>
+                  <span className="serif text-2xl text-gold">$20<small className="text-[10px] uppercase ml-1">/1.5h</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="mt-20 text-center bg-[#fdfaf5] p-14 lg:p-20 rounded-sm border border-forest/5 max-w-4xl mx-auto shadow-sm">
             <h4 className="serif text-4xl text-forest mb-6 font-light">Looking for something specific?</h4>
             <p className="text-light text-lg font-light mb-12 max-w-sm mx-auto">Custom multi-family packages and season-long rates are available upon request.</p>

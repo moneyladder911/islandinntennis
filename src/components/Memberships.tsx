@@ -10,11 +10,11 @@ const Memberships: React.FC = () => {
       tag: "Seasonal Opening Special",
       icon: <Zap className="text-gold" />,
       features: [
-        "Play FREE All Summer",
-        "Unlimited Court Rental",
+        "Play FREE until November 1st",
+        "Up to 3 sessions per week",
         "Preferred Booking Times",
         "Invitation to Member Mixers",
-        "Available until June 1st"
+        "Seasonal Membership Offer"
       ],
       cta: "Grab Early Bird",
       highlight: false
@@ -25,8 +25,8 @@ const Memberships: React.FC = () => {
       tag: "The Island Choice",
       icon: <Star className="text-gold fill-gold" />,
       features: [
-        "Play FREE All Summer",
-        "Unlimited Court Rental",
+        "Play FREE until November 1st",
+        "Play unlimited times",
         "10% Off Private Lessons",
         "Invite to Season Finals",
         "Full Resort Access (Island Inn)"
@@ -41,10 +41,10 @@ const Memberships: React.FC = () => {
       icon: <Users className="text-gold" />,
       features: [
         "Whole Family Plays FREE",
-        "Multiple Court Bookings",
+        "Unlimited Family Bookings",
         "Priority Junior Clinic Entry",
         "Family Mixer Invites",
-        "The Best Value on the Island"
+        "Available until November 1st"
       ],
       cta: "Join as Family",
       highlight: false
@@ -58,7 +58,7 @@ const Memberships: React.FC = () => {
           <span className="text-[10px] font-bold tracking-[5px] uppercase text-gold mb-6 block">CORE OFFER</span>
           <h2 className="serif text-5xl md:text-6xl font-light leading-tight mb-8">2026 Summer <em className="italic text-clay font-normal">Memberships</em></h2>
           <p className="text-forest/60 text-lg font-light max-w-2xl mx-auto leading-relaxed">
-            The heart of Island Tennis. All seasonal offers are available through <em className="text-clay italic font-normal">November 2026</em>.
+            The heart of Island Tennis. All seasonal offers are available through <em className="text-clay italic font-normal">November 1st, 2026</em>.
           </p>
         </div>
 

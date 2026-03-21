@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 const GalleryPage: React.FC = () => {
   const images = [
-    { span: 'md:row-span-2', title: 'Morning Mist on Court 1', icon: '☁️', color: '#1a3a2a' },
-    { span: 'md:col-span-2', title: 'Summer Junior Camp', icon: '🎾', color: '#c96b3a' },
-    { span: '', title: 'Oak Bluffs Sunset', icon: '🌅', color: '#b89a5e' },
-    { span: '', title: 'Beach Road Entrance', icon: '🏤', color: '#0d1f16' },
-    { span: 'md:col-span-2', title: 'Pro Clinic Action', icon: '👥', color: '#1e5c38' },
+    { span: 'md:row-span-2', title: 'Seasonal Mixer at Island Inn', url: '/gallery/gallery-1.jpg', color: '#1a3a2a', pos: 'center 20%' },
+    { span: 'md:col-span-2', title: 'Summer Family Tennis', url: '/gallery/gallery-2.jpg', color: '#c96b3a', pos: 'top' },
+    { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
+    { span: '', title: 'Morning Drills with the Girls', url: '/gallery/gallery-4.jpg', color: '#0d1f16', pos: 'center 20%' },
+    { span: 'md:col-span-2', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 10%' },
     { span: '', title: 'Island Inn Pool Side', icon: '🏊', color: '#1a3a5a' },
     { span: 'md:row-span-2', title: 'Nomans Garden View', icon: '🌿', color: '#153d20' },
     { span: '', title: 'Tennis Pro Shop', icon: '🏪', color: '#2a5a3a' },
@@ -40,7 +40,7 @@ const GalleryPage: React.FC = () => {
               Island <em className="italic text-gold font-normal">Spirit in Focus</em>
             </h1>
             <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">
-              A visual journey through the courts and coastlines of Martha's Vineyard. All programs and sessions active through <em className="text-gold italic font-normal">November 2026</em>.
+              A visual journey through the courts and coastlines of Martha's Vineyard. All programs and sessions active through <em className="text-gold italic font-normal">November 1st, 2026</em>.
             </p>
             <div className="w-12 h-[1px] bg-gold/30 mx-auto" />
           </motion.div>
@@ -59,12 +59,21 @@ const GalleryPage: React.FC = () => {
                 viewport={{ once: true }}
                 className={`relative group bg-white overflow-hidden rounded-sm shadow-premium ${img.span}`}
               >
-                <div 
-                  className="absolute inset-0 flex items-center justify-center text-7xl transition-transform duration-1000 group-hover:scale-125"
-                  style={{ backgroundColor: img.color }}
-                >
-                  <span className="opacity-40">{img.icon}</span>
-                </div>
+                {img.url ? (
+                  <img 
+                    src={img.url} 
+                    alt={img.title} 
+                    className="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                    style={{ objectPosition: (img as any).pos || 'center' }}
+                  />
+                ) : (
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center text-7xl transition-transform duration-1000 group-hover:scale-125"
+                    style={{ backgroundColor: img.color }}
+                  >
+                    <span className="opacity-40">{(img as any).icon}</span>
+                  </div>
+                )}
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-forest/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-8 text-center">
                   <span className="text-[8px] font-bold tracking-[3px] uppercase text-gold mb-2">Featured Shot</span>

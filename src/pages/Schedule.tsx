@@ -3,8 +3,23 @@ import { motion } from 'framer-motion';
 import { Clock, MapPin, ChevronRight, UserPlus, ChevronDown, X, CheckCircle2 } from 'lucide-react';
 
 const SchedulePage: React.FC = () => {
-  const [activeDay, setActiveDay] = useState('Today');
-  const days = ['Today', 'Tomorrow', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  // Generate 7 days starting from May 1st
+  const scheduleStartDate = new Date(2026, 4, 1); // May 1st, 2026
+  const days = Array.from({ length: 7 }, (_, i) => {
+    const date = new Date(scheduleStartDate);
+    date.setDate(scheduleStartDate.getDate() + i);
+    
+    const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+    const shortDate = date.toLocaleDateString('en-US', { month: 'short', day: '2-digit' }).toUpperCase();
+    
+    // Label for the button: Today/Tomorrow if applicable, else Day Name
+    let label = dayName;
+    if (i === 0) label = 'Friday'; // May 1st 2026 is a Friday
+    
+    return { label, fullDate: shortDate, id: `${dayName}-${shortDate}` };
+  });
+
+  const [activeDay, setActiveDay] = useState(days[0].id);
   
   const levels = [
     { name: '2.0/2.5 Level', desc: 'Learning the game, basic strokes, and court positioning. Perfect for beginners.' },
@@ -72,12 +87,13 @@ const SchedulePage: React.FC = () => {
               {days.map((day, i) => (
                 <button 
                   key={i} 
-                  onClick={() => setActiveDay(day)}
-                  className={`px-8 py-3 text-[10px] font-bold tracking-[3px] uppercase rounded-full transition-all shrink-0 ${
-                    activeDay === day ? 'bg-forest text-gold shadow-lg scale-105' : 'bg-transparent text-light border border-clay/10 hover:border-clay hover:text-clay'
+                  onClick={() => setActiveDay(day.id)}
+                  className={`flex flex-col items-center justify-center px-8 py-3 rounded-full transition-all shrink-0 min-w-[120px] ${
+                    activeDay === day.id ? 'bg-forest text-gold shadow-lg scale-105' : 'bg-transparent text-light border border-clay/10 hover:border-clay hover:text-clay'
                   }`}
                 >
-                  {day}
+                  <span className="text-[7px] tracking-[2px] opacity-70 mb-0.5">{day.fullDate}</span>
+                  <span className="text-[9px] font-bold tracking-[2px] uppercase">{day.label}</span>
                 </button>
               ))}
             </div>
@@ -100,7 +116,7 @@ const SchedulePage: React.FC = () => {
               </div>
             </div>
             
-            <p className="text-light text-sm font-light mt-8">Displaying open match allocations for <strong className="font-semibold text-forest">{activeDay}</strong>.</p>
+            <p className="text-light text-sm font-light mt-8">Displaying open match allocations for <strong className="font-semibold text-forest">{days.find(d => d.id === activeDay)?.label} {days.find(d => d.id === activeDay)?.fullDate}</strong>.</p>
           </div>
 
           <div className="max-w-[1000px] mx-auto">
