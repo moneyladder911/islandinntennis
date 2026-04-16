@@ -89,6 +89,8 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu Button - ELIMINATED on Desktop by removing inline display style */}
         <button 
           className="lg:hidden flex items-center justify-center"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
           style={{ 
             backgroundColor: 'transparent', 
             border: 'none', 

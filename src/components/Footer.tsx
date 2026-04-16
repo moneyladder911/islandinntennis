@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
             <form className="flex flex-col md:flex-row gap-2 md:gap-0 group border border-white/10 overflow-hidden rounded-sm" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
+                aria-label="Email address"
                 placeholder="Email address..." 
                 className="flex-grow p-5 bg-white/[0.03] text-white outline-none text-sm placeholder:text-white/20 border-none transition-all focus:bg-white/[0.07]"
               />
@@ -46,9 +47,9 @@ const Footer: React.FC = () => {
             The premier tennis destination on Martha's Vineyard. High-performance instruction in a luxury resort setting.
           </p>
           <div className="flex gap-6 mt-2">
-            <a href="https://www.instagram.com/islandinntennismv/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Instagram size={18} /></a>
-            <a href="https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Facebook size={18} /></a>
-            <a href="sms:+14079239047" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><MessageSquare size={18} /></a>
+            <a href="https://www.instagram.com/islandinntennismv/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Instagram size={18} /></a>
+            <a href="https://www.facebook.com/people/Island-Inn-Tennis-Club/61560318390721/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><Facebook size={18} /></a>
+            <a href="sms:+14079239047" aria-label="Send SMS" className="text-white/20 hover:text-[#b56c4d] transition-all duration-300 transform hover:-translate-y-1"><MessageSquare size={18} /></a>
           </div>
         </div>
 
