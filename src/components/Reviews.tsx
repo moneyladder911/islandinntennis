@@ -8,7 +8,7 @@ interface ReviewsProps {
 }
 
 const reviewsData = [
-  { text: "I play every day and have been a member since the beginning of the summer. As Kim's boyfriend, I'm definitely biased, but hitting with the boys and taking private classes here is the best part of my day.", author: "DAVID", date: "Summer 2025", tag: "MEMBERSHIP", stars: 5 },
+  { text: "I play every day and have been a member since the beginning of the summer. As Kim's biggest supporter, I'm definitely biased, but hitting with the boys and taking private classes here is the best part of my day.", author: "DAVID", date: "Summer 2025", tag: "MEMBERSHIP", stars: 5 },
   { text: "As a local resident, I've known Kim forever. We always hit up the courts for matches, and the junior classes are fantastic. It's the perfect setup for the whole community.", author: "MEGAN", date: "July 2025", tag: "LOCAL RESIDENT", stars: 5 },
   { text: "We live on the island and basically live at these courts. From organizing great matches to running top-tier junior classes, Kim just knows how to make it happen.", author: "SHAWN", date: "August 2025", tag: "MATCH PLAY", stars: 5 },
   { text: "Being a resident means we get to enjoy this spot constantly. The match play is always competitive but fun, and the junior classes have been amazing for the kids.", author: "PAULA", date: "August 2025", tag: "ISLAND RESIDENT", stars: 5 },
