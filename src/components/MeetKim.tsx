@@ -18,7 +18,7 @@ const MeetKim: React.FC = () => {
           >
             <img 
               src="/kim-portrait.jpg" 
-              alt="Kim - Head Tennis Pro at Island Inn Tennis Club"
+              alt="Kim - CEO at Island Inn Tennis Club"
               className="w-full h-full object-cover"
               style={{ objectPosition: 'center 15%' }}
             />

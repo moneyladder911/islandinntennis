@@ -22,7 +22,7 @@ const GalleryPage: React.FC = () => {
       transition={{ duration: 0.8 }}
     >
       <section
-        className="pt-32 pb-12 text-center relative overflow-hidden flex items-center justify-center px-10"
+        className="pt-28 pb-10 text-center relative overflow-hidden flex items-center justify-center px-10"
         style={{ backgroundColor: '#163020' }}
       >
         <div
@@ -37,7 +37,7 @@ const GalleryPage: React.FC = () => {
             className="flex flex-col items-center justify-center w-full max-w-3xl mx-auto"
           >
             <span className="text-[10px] font-bold tracking-[6px] uppercase text-gold mb-4 inline-block text-center w-full">THE EXPERIENCE</span>
-            <h1 className="serif text-[clamp(32px,5vw,48px)] font-light text-white leading-[1.2] mb-6 select-none text-center w-full flex-shrink-0">
+            <h1 className="serif text-[clamp(28px,4vw,36px)] font-light text-white leading-[1.2] mb-6 select-none text-center w-full flex-shrink-0">
               Island <em className="italic text-gold font-normal">Spirit in Focus</em>
             </h1>
             <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">

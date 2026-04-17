@@ -87,7 +87,7 @@ const About: React.FC = () => {
             <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border border-forest/5">
               <img 
                 src="/kim-portrait.jpg" 
-                alt="Kim - Head Tennis Pro at Island Inn Tennis Club"
+                alt="Kim - CEO at Island Inn Tennis Club"
                 className="w-full h-full object-cover"
                 style={{ objectPosition: 'center 15%' }}
               />

@@ -5,6 +5,7 @@ import Programs from '../components/Programs';
 import Reviews from '../components/Reviews';
 import Memberships from '../components/Memberships';
 import SchedulePreview from '../components/SchedulePreview';
+import SEO from '../components/SEO';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -17,6 +18,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-cream">
+      <SEO 
+        title="Your Match. Your Court. Your Island."
+        description="Experience the best tennis on Martha's Vineyard. High-performance clinics, private lessons, and the island's premier courts in Oak Bluffs."
+      />
       {/* 1. Hero */}
       <Hero />
       
