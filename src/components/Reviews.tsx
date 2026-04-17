@@ -9,10 +9,10 @@ interface ReviewsProps {
 
 const reviewsData = [
   { text: "I play every day and have been a member since the beginning of the summer. As Kim's biggest supporter, I'm definitely biased, but hitting with the boys and taking private classes here is the best part of my day.", author: "DAVID", date: "Summer 2025", tag: "MEMBERSHIP", stars: 5 },
-  { text: "As a local resident, I've known Kim forever. We always hit up the courts for matches, and the junior classes are fantastic. It's the perfect setup for the whole community.", author: "MEGAN", date: "July 2025", tag: "LOCAL RESIDENT", stars: 5 },
-  { text: "We live on the island and basically live at these courts. From organizing great matches to running top-tier junior classes, Kim just knows how to make it happen.", author: "SHAWN", date: "August 2025", tag: "MATCH PLAY", stars: 5 },
-  { text: "Being a resident means we get to enjoy this spot constantly. The match play is always competitive but fun, and the junior classes have been amazing for the kids.", author: "PAULA", date: "August 2025", tag: "ISLAND RESIDENT", stars: 5 },
-  { text: "I've known Kim forever, and there's no better place for locals to play. Great matches with great people, plus awesome junior clinics if you need them. Unbeatable vibe.", author: "MIKE", date: "Sept 2025", tag: "COMMUNITY", stars: 5 },
+  { text: "As a local resident, I've known Kim forever. We always hit up the courts for matches, and the group clinics are fantastic. It's the perfect setup for the whole community.", author: "MEGAN", date: "July 2025", tag: "LOCAL RESIDENT", stars: 5 },
+  { text: "We live on the island and basically live at these courts. From organizing great matches to running top-tier adult clinics, Kim just knows how to make it happen.", author: "SHAWN", date: "August 2025", tag: "MATCH PLAY", stars: 5 },
+  { text: "Being a resident means we get to enjoy this spot constantly. The match play is always competitive but fun, and the group sessions have been amazing for improving my game.", author: "PAULA", date: "August 2025", tag: "ISLAND RESIDENT", stars: 5 },
+  { text: "I've known Kim forever, and there's no better place for locals to play. Great matches with great people, plus awesome group clinics if you need them. Unbeatable vibe.", author: "MIKE", date: "Sept 2025", tag: "COMMUNITY", stars: 5 },
   { text: "Every summer, I come down just to play matches with my friends. We all absolutely love Kim and the incredible energy she brings to the courts.", author: "MIKA", date: "Summer 2025", tag: "SUMMER MATCHES", stars: 5 },
   { text: "I help manage the place and take care of a lot of the behind-the-scenes stuff. Seeing players come in every day and leaving with a smile makes all the hard work worth it. The positive vibe here is contagious!", author: "KELLEY", date: "July 2025", tag: "MANAGEMENT", stars: 5 },
   { text: "I buy a membership every single year and play almost every day. The level of play here is fantastic if you're looking for challenging, competitive matches.", author: "ROB", date: "Summer 2025", tag: "ANNUAL MEMBER", stars: 5 },
@@ -22,7 +22,7 @@ const reviewsData = [
   { text: "The group clinics are a blast! Oskar and the team make it so fun while keeping it engaging. Setting up matches afterwards is always seamless and easy.", author: "BECKY", date: "July 2025", tag: "CLINICS & MATCHES", stars: 5 },
   { text: "I balance my time between playing fun matches and taking private lessons to keep my game sharp. The organization by Kim and quality of coaching from the team is perfect.", author: "JUNE", date: "Summer 2025", tag: "PRIVATE LESSONS", stars: 5 },
   { text: "Finding a consistent, high-quality tennis community on the island was tough until I started playing at Island Inn. Solid matches and great people.", author: "ANDY", date: "August 2025", tag: "MATCH PLAY", stars: 5 },
-  { text: "The junior program is exceptional. My kids have learned so much, and the resident community vibe just makes the summers that much better. Highly recommend.", author: "SARAH", date: "Summer 2025", tag: "JUNIOR PROGRAM", stars: 5 }
+  { text: "The adult programming is exceptional. I've learned so much, and the resident community vibe just makes the summers that much better. Highly recommend.", author: "SARAH", date: "Summer 2025", tag: "CLINICS", stars: 5 }
 ];
 
 const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
