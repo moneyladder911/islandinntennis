@@ -10,49 +10,32 @@ interface MembershipsProps {
 const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
   const plans = [
     {
-      name: "Early Bird",
-      price: "599",
-      tag: "Seasonal Opening Special",
-      icon: <Zap className="text-gold" />,
-      features: [
-        "Play FREE until November 1st",
-        "Up to 4 sessions per week",
-        "Island Inn Pool Access",
-        "Preferred Booking Times",
-        "Invitation to Member Mixers"
-      ],
-      cta: "Grab Early Bird",
-      highlight: false
-    },
-    {
-      name: "Regular Season",
-      price: "999",
+      name: "Single Membership",
+      price: "600",
       tag: "The Island Choice",
       icon: <Star className="text-gold fill-gold" />,
       features: [
         "Play FREE until November 1st",
         "Play unlimited times",
-        "Island Inn Pool Access",
         "Weekly Social Events",
         "Invite to Season Finals"
       ],
       cta: "Become a Member",
-      highlight: true
+      highlight: false
     },
     {
       name: "Family All-Access",
-      price: "1299",
+      price: "950",
       tag: "Covers up to 4 Members",
       icon: <Users className="text-gold" />,
       features: [
         "Whole Family Plays FREE",
         "Unlimited Family Bookings",
-        "Island Inn Pool Access",
         "Priority Junior Clinic Entry",
         "Family Mixer Invites"
       ],
       cta: "Join as Family",
-      highlight: false
+      highlight: true
     }
   ];
 
@@ -67,7 +50,7 @@ const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 max-w-4xl mx-auto gap-8">
           {plans.map((plan, i) => (
             <motion.div 
               key={i}
