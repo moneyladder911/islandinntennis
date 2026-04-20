@@ -22,7 +22,15 @@ const reviewsData = [
   { text: "The group clinics are a blast! Oskar and the team make it so fun while keeping it engaging. Setting up matches afterwards is always seamless and easy.", author: "BECKY", date: "July 2025", tag: "CLINICS & MATCHES", stars: 5 },
   { text: "I balance my time between playing fun matches and taking private lessons to keep my game sharp. The organization by Kim and quality of coaching from the team is perfect.", author: "JUNE", date: "Summer 2025", tag: "PRIVATE LESSONS", stars: 5 },
   { text: "Finding a consistent, high-quality tennis community on the island was tough until I started playing at Island Inn. Solid matches and great people.", author: "ANDY", date: "August 2025", tag: "MATCH PLAY", stars: 5 },
-  { text: "The adult programming is exceptional. I've learned so much, and the resident community vibe just makes the summers that much better. Highly recommend.", author: "SARAH", date: "Summer 2025", tag: "CLINICS", stars: 5 }
+  { text: "The adult programming is exceptional. I've learned so much, and the resident community vibe just makes the summers that much better. Highly recommend.", author: "SARAH", date: "Summer 2025", tag: "CLINICS", stars: 5 },
+  { text: "We've been friends with Kim for a long time, and her courts are our absolute favorite spot. The match play here is incredible and the energy is unmatched!", author: "CECE & FRED", date: "Summer 2025", tag: "FRIENDS & MATCHES", stars: 5 },
+  { text: "We love playing matches together here. The organization is perfect and we're just enjoying every second we get on the courts!", author: "KATHY & JEFF", date: "Summer 2025", tag: "MATCH PLAY", stars: 5 },
+  { text: "Taking lessons with the team and then jumping right into competitive matches is exactly what I needed. Highly recommend it to anyone!", author: "GRACE", date: "Summer 2025", tag: "LESSONS & MATCHES", stars: 5 },
+  { text: "The private lessons really sharpened our skills, and the organized match play gives us the perfect place to use them. It's an amazing community.", author: "MARCIA & HARRY", date: "Summer 2025", tag: "LESSONS & MATCHES", stars: 5 },
+  { text: "Every match we play here is perfectly arranged. Kim has created such a wonderful, welcoming environment for players of all levels.", author: "RJ & COLLEEN", date: "Summer 2025", tag: "COMPETITIVE MATCHES", stars: 5 },
+  { text: "We can't say enough good things about the community here. The matches are engaging, the people are kind, and we look forward to it every week.", author: "MARY ELLEN & DAVID", date: "Summer 2025", tag: "COMMUNITY MATCHES", stars: 5 },
+  { text: "The level of match play here is fantastic. Kim always sets up great hits and makes sure everyone has a great time on the court.", author: "KEITH", date: "Summer 2025", tag: "MATCH PLAY", stars: 5 },
+  { text: "It's so easy to drop in and play a great match here. The club has an amazing vibe and everyone is incredibly friendly and welcoming.", author: "LORI", date: "Summer 2025", tag: "MATCH PLAY", stars: 5 }
 ];
 
 const Reviews: React.FC<ReviewsProps> = ({ isPreview = false, showPage }) => {
