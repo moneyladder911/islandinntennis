@@ -96,7 +96,7 @@ const PricingPage: React.FC = () => {
             <p className="text-light text-lg font-light max-w-xl mx-auto">For guests, transients, and those perfecting their game one lesson at a time.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1 p-1 bg-forest/5 border border-forest/5 shadow-2xl">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-1 p-1 bg-forest/5 border border-forest/5 shadow-2xl max-w-5xl mx-auto">
             {tiers.map((tier, i) => (
               <motion.div
                 key={i}
