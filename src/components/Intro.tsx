@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 
 const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => {
   const features = [
+    'Monday Mix Plays',
+    'Wednesday All Men',
+    'Inter-Club Matches',
     'On-Demand Matches',
-    'Private Lessons',
     'Group Clinics',
     'All Skill Levels',
-    'Pro Shop On-Site',
   ];
 
   return (
@@ -40,7 +41,17 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
         >
           {/* Swapped Title and Tag as requested: Title first, Subtitle second */}
           <h2 className="serif text-[clamp(36px,5vw,58px)] font-light text-forest leading-tight mb-4">Tennis at the Heart of <br/><em className="italic text-clay font-normal">Martha's Vineyard</em></h2>
-          <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-8">ABOUT THE CLUB</div>
+          <div className="text-[10px] font-bold tracking-[4px] uppercase text-clay mb-6">ABOUT THE CLUB</div>
+
+          <div className="mb-8 p-5 border border-clay/30 bg-forest/5 rounded-sm">
+            <div className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-clay animate-pulse" />
+              2026 Season Update
+            </div>
+            <p className="text-[13px] font-light leading-[1.6] text-forest/80">
+              We're expanding our weekly schedule! Join us for <strong>Monday Mix Plays</strong> and <strong>Wednesday All Men's</strong> sessions. Additionally, we are thrilled to start playing competitive <strong>Inter-Club Matches</strong> across the island.
+            </p>
+          </div>
           
           <p className="text-[15px] font-light leading-[1.8] text-light mb-10 max-w-lg">
             Nestled behind Nomans Restaurant at the Island Inn on Beach Road, we're Oak Bluffs' favorite social tennis club. As much about community as competition — join us for matches, mixers, and the best island connections on and off the court.

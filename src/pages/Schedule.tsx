@@ -4,10 +4,10 @@ import { Sun, Users, Trophy, Clock, MapPin, Phone, MessageCircle } from 'lucide-
 
 const SchedulePage: React.FC = () => {
   const offerings = [
-    { icon: <Users size={24} className="text-gold" />, title: 'Social Doubles', desc: 'Organized doubles matches for all levels. Kim pairs you with the right partners for competitive, fun play.' },
-    { icon: <Trophy size={24} className="text-gold" />, title: 'Group Clinics', desc: 'High-energy drills and skill-building sessions led by Kim. Perfect for improving your game in a social setting.' },
-    { icon: <Sun size={24} className="text-gold" />, title: 'Open Match Play', desc: 'Drop in for singles or doubles. Morning, afternoon, and evening slots available throughout the week.' },
-    { icon: <Clock size={24} className="text-gold" />, title: 'Private Lessons', desc: 'One-on-one instruction tailored to your level. Flexible scheduling — text Kim to arrange a time that works.' },
+    { icon: <Users size={24} className="text-gold" />, title: 'Monday Mix Plays', desc: 'Start your week right. Our organized mixed doubles matches are perfect for all skill levels and great for meeting players.' },
+    { icon: <Sun size={24} className="text-gold" />, title: 'Wednesday All Men', desc: 'Mid-week high-energy men\'s matches. Drop in for competitive sets and great camaraderie on the courts.' },
+    { icon: <Trophy size={24} className="text-gold" />, title: 'Inter-Club Matches', desc: 'We are officially joining island-wide competitive play! Represent Island Inn and compete against other Vineyard clubs.' },
+    { icon: <Clock size={24} className="text-gold" />, title: 'Private Lessons & Clinics', desc: 'One-on-one instruction or group drills tailored to your level. Flexible scheduling — text Kim to arrange your session.' },
   ];
 
   return (
