@@ -74,7 +74,6 @@ const Footer: React.FC = () => {
             {[
               { name: 'Private Lessons', path: '/programs' },
               { name: 'Seasonal Membership', path: '/pricing' },
-              { name: 'Junior Academy', path: '/programs' },
               { name: 'On-Demand Play', path: '/schedule' }
             ].map((item) => (
               <li key={item.name}>

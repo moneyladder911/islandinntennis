@@ -34,20 +34,6 @@ const PricingPage: React.FC = () => {
       cta: 'Join Clinic'
     },
     {
-      title: 'Junior Program',
-      price: '$180',
-      period: 'weekly',
-      desc: 'Focused fun for players ages 6-17.',
-      features: [
-        'Age-specific tracks',
-        'Daily sessions',
-        'Progress tracking',
-        'Summer camp vibe',
-      ],
-      popular: false,
-      cta: 'Enroll Junior'
-    },
-    {
       title: 'Vacation Packages',
       price: '$299',
       period: '3-day intensive',

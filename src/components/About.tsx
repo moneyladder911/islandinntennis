@@ -98,7 +98,7 @@ const About: React.FC = () => {
                   At the heart of Island Inn Tennis is Kim — the CEO, organizer, and driving force behind everything that happens on and off the courts. Kim manages the entire complex, from scheduling matches and organizing clinics to coordinating memberships and running events.
                 </p>
                 <p>
-                  Whether you're looking to get into a social doubles game, sign your kids up for junior programs, or plan a private event — Kim is your single point of contact. She knows every player, every court, and every detail that makes this club special.
+                  Whether you're looking to get into a social doubles game, book a private lesson, or plan a private event — Kim is your single point of contact. She knows every player, every court, and every detail that makes this club special.
                 </p>
               </div>
               <div className="mt-10">

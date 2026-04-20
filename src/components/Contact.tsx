@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   ];
 
   const faqs = [
-    { q: "Do I need to bring my own racket?", a: "No! We have high-quality Head and Wilson rackets available for rental, and junior rackets are included in program fees. However, you're always welcome to bring your own." },
+    { q: "Do I need to bring my own racket?", a: "No! We have high-quality Head and Wilson rackets available for rental. However, you're always welcome to bring your own." },
     { q: "What skill level do I need?", a: "All skill levels are welcome! From your very first backhand to tournament-ready play, Kim will match you with the right program and partners." },
     { q: "How do I book a court or lesson?", a: "The fastest way is to text Kim directly at +1 (508) 939-3030. You can also call the Island Inn main line or send us a message below." },
     { q: "Is there parking available?", a: "Yes, there is ample free parking available behind Nomans Restaurant, directly adjacent to the tennis courts." },
@@ -70,7 +70,6 @@ const Contact: React.FC = () => {
                   <option>Private Lessons</option>
                   <option>Group Clinics</option>
                   <option>On-Demand Match</option>
-                  <option>Junior Program</option>
                   <option>Adult Social Play</option>
                   <option>Vacation Package</option>
                   <option>General Inquiry</option>

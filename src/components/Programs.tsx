@@ -13,7 +13,6 @@ const Programs: React.FC<ProgramsProps> = ({ showPage, isPreview = true }) => {
     { icon: '🎾', title: 'Private Lessons', desc: 'One-on-one coaching tailored to your level. Master technique, strategy, and mental game.', meta: 'BEGINNER · INTERMEDIATE · ADVANCED' },
     { icon: '👥', title: 'Group Clinics', desc: 'High-energy clinics for 4-8 players. Build skills, make friends, enjoy the island lifestyle.', meta: 'ALL LEVELS · WEEKLY SESSIONS' },
     { icon: '⚡', title: 'On-Demand Matches', desc: 'Jump in anytime. Match up with players of similar ability for casual games or competitive sets.', meta: 'FLEXIBLE SCHEDULING' },
-    { icon: '⭐', title: 'Junior Program', desc: 'Fun-focused development for young players ages 6-17. Build confidence and love of tennis.', meta: 'AGES 6-17 · SUMMER SESSIONS' },
     { icon: '🏆', title: 'Adult Social Play', desc: 'Round-robins, mixers, and socials. Meet fellow tennis lovers on the Vineyard.', meta: 'WEEKLY · OPEN TO ALL MEMBERS' },
     { icon: '🌅', title: 'Vacation Packages', desc: 'Visiting the Vineyard? Curated tennis packages let you play every day of your stay.', meta: 'CUSTOM · MULTI-DAY' }
   ];

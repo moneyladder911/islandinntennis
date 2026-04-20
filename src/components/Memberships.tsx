@@ -31,7 +31,7 @@ const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
       features: [
         "Whole Family Plays FREE",
         "Unlimited Family Bookings",
-        "Priority Junior Clinic Entry",
+        "Priority Event Registration",
         "Family Mixer Invites"
       ],
       cta: "Join as Family",

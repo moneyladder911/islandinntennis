@@ -6,7 +6,6 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
     'On-Demand Matches',
     'Private Lessons',
     'Group Clinics',
-    'Junior Programs',
     'All Skill Levels',
     'Pro Shop On-Site',
   ];
