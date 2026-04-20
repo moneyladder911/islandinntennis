@@ -6,6 +6,7 @@ const SchedulePage: React.FC = () => {
   const offerings = [
     { icon: <Users size={24} className="text-gold" />, title: 'Monday Mix Plays', desc: 'Start your week right. Our organized mixed doubles matches are perfect for all skill levels and great for meeting players.' },
     { icon: <Sun size={24} className="text-gold" />, title: 'Wednesday All Men', desc: 'Mid-week high-energy men\'s matches. Drop in for competitive sets and great camaraderie on the courts.' },
+    { icon: <Trophy size={24} className="text-gold" />, title: 'Sundays High Level Men\'s (3.0+)', desc: 'End your week with competitive, fast-paced matches. Open exclusively to male players with a 3.0+ rating.' },
     { icon: <Trophy size={24} className="text-gold" />, title: 'Inter-Club Matches', desc: 'We are officially joining island-wide competitive play! Represent Island Inn and compete against other Vineyard clubs.' },
     { icon: <Clock size={24} className="text-gold" />, title: 'Private Lessons & Clinics', desc: 'One-on-one instruction or group drills tailored to your level. Flexible scheduling — text Kim to arrange your session.' },
   ];

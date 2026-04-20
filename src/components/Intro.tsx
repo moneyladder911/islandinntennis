@@ -5,10 +5,10 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
   const features = [
     'Monday Mix Plays',
     'Wednesday All Men',
+    'Sundays High Level Men (3.0+)',
     'Inter-Club Matches',
-    'On-Demand Matches',
     'Group Clinics',
-    'All Skill Levels',
+    'Private Lessons',
   ];
 
   return (
@@ -49,7 +49,7 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
               2026 Season Update
             </div>
             <p className="text-[13px] font-light leading-[1.6] text-forest/80">
-              We're expanding our weekly schedule! Join us for <strong>Monday Mix Plays</strong> and <strong>Wednesday All Men's</strong> sessions. Additionally, we are thrilled to start playing competitive <strong>Inter-Club Matches</strong> across the island.
+              We're expanding our weekly schedule! Join us for <strong>Monday Mix Plays</strong>, <strong>Wednesday All Men's</strong>, and <strong>Sundays High Level Men's (3.0+)</strong> sessions. Additionally, we are thrilled to start playing competitive <strong>Inter-Club Matches</strong> across the island.
             </p>
           </div>
           
