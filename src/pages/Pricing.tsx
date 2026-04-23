@@ -35,8 +35,8 @@ const PricingPage: React.FC = () => {
     },
     {
       title: 'Vacation Packages',
-      price: '$299',
-      period: '3-day intensive',
+      price: 'Custom',
+      period: 'price upon inquiry',
       desc: 'Make tennis the heart of your stay.',
       features: [
         'Daily court time',
