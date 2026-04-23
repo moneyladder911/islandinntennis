@@ -18,9 +18,15 @@ const Footer: React.FC = () => {
             <p className="text-white/40 text-[15px] font-light leading-relaxed">Join for seasonal opening dates and island clinic schedules.</p>
           </div>
           <div className="relative z-10 w-full lg:w-auto min-w-0 md:min-w-[420px]">
-            <form className="flex flex-col md:flex-row gap-2 md:gap-0 group border border-white/10 overflow-hidden rounded-sm" onSubmit={(e) => e.preventDefault()}>
+            <form 
+              action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
+              method="POST" 
+              className="flex flex-col md:flex-row gap-2 md:gap-0 group border border-white/10 overflow-hidden rounded-sm"
+            >
               <input 
                 type="email" 
+                name="email"
+                required
                 aria-label="Email address"
                 placeholder="Email address..." 
                 className="flex-grow p-5 bg-white/[0.03] text-white outline-none text-sm placeholder:text-white/20 border-none transition-all focus:bg-white/[0.07]"
