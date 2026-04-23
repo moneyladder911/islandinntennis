@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+
 import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
@@ -131,10 +131,7 @@ const Hero: React.FC = () => {
             <span className="text-[#b39359]">Season: May 16 – November 7</span>
           </div>
         </div>
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/20 animate-fade-in-delay">
-          <ChevronDown size={32} className="animate-bounce" />
-        </div>
+
       </div>
     </section>
   );
