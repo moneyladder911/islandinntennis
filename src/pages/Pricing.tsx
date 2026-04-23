@@ -155,8 +155,8 @@ const PricingPage: React.FC = () => {
                   <span className="serif text-2xl text-clay">$25<small className="text-[10px] uppercase ml-1">/hr</small></span>
                 </div>
                 <div className="flex justify-between items-center border-b border-forest/10 pb-4">
-                  <span className="text-xs font-bold uppercase tracking-widest text-forest/70">Public / Outsiders</span>
-                  <span className="serif text-2xl text-clay">$35<small className="text-[10px] uppercase ml-1">/hr</small></span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-forest/70">Public</span>
+                  <span className="serif text-2xl text-clay">$25<small className="text-[10px] uppercase ml-1">/hr</small></span>
                 </div>
               </div>
             </div>
