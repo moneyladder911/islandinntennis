@@ -8,6 +8,7 @@ const GalleryPage: React.FC = () => {
     { span: 'md:row-span-2', title: 'Seasonal Mixer at Island Inn', url: '/gallery/gallery-1.jpg', color: '#1a3a2a', pos: 'center 20%' },
     { span: 'md:row-span-2', title: 'Summer Family Tennis', url: '/gallery/gallery-2.jpg', color: '#c96b3a', pos: 'center' },
     { span: 'lg:col-span-3 aspect-[3/1] md:aspect-auto', title: 'Tennis Community under the Oaks', url: '/gallery/gallery-5.jpg', color: '#1e5c38', pos: 'center 40%' },
+    { span: 'md:row-span-2', title: 'Kim with Young Members & Their Fathers', url: '/gallery/gallery-7.jpg', color: '#1a3a2a', pos: 'center 20%' },
     { span: '', title: 'Private Instruction Support', url: '/gallery/gallery-3.jpg', color: '#b89a5e', pos: 'center 15%' },
     { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },
     { span: '', title: 'Tennis Pro Shop', url: '/gallery/pro-shop.jpg', color: '#2a5a3a', pos: 'center' },
