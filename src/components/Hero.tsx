@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -21,26 +20,22 @@ const Hero: React.FC = () => {
       }}
     >
       {/* Background Image & Overlays */}
-      <div className="absolute inset-0 z-0 bg-forest overflow-hidden">
-        <motion.img
-          initial={{ scale: 1 }}
-          animate={{ scale: 1.05 }}
-          transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-          src="/island-inn-real.webp"
-          alt="Island Inn Tennis Courts Aerial View"
-          className="w-full h-full object-cover opacity-60"
-          fetchPriority="high"
-          decoding="sync"
-        />
+      <div className="absolute inset-0 z-0 bg-forest overflow-hidden flex items-center justify-center">
+        <div className="w-full h-full max-w-[1600px] overflow-hidden -m-10 p-10">
+          <img
+            src="/island-inn-real.avif"
+            alt="Island Inn Tennis Courts Aerial View"
+            className="w-full h-full object-cover opacity-60 animate-hero-zoom scale-100 will-change-transform"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-forest/30 via-forest/50 to-[#163020]" />
       </div>
 
       <div className="container relative z-10 max-w-6xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="flex flex-col items-center justify-center min-h-[80vh]"
+        <div
+          className="flex flex-col items-center justify-center min-h-[80vh] animate-fade-in-up"
         >
           {/* Tagline */}
           <div
@@ -127,21 +122,19 @@ const Hero: React.FC = () => {
               letterSpacing: '5px',
               color: 'rgba(255, 255, 255, 0.4)',
               textTransform: 'uppercase',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px'
             }}
           >
-            30 Island Inn Road · Oak Bluffs, MA 02557
+            <span>30 Island Inn Road · Oak Bluffs, MA 02557</span>
+            <span className="text-[#b39359]">Season: May 16 – November 7</span>
           </div>
-        </motion.div>
-
+        </div>
         {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/20"
-        >
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/20 animate-fade-in-delay">
           <ChevronDown size={32} className="animate-bounce" />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

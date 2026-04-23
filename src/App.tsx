@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Layout from './layout/Layout';
-import Home from './pages/Home';
-import Programs from './pages/Programs';
-import About from './pages/About';
-import Reviews from './pages/Reviews';
-import Contact from './pages/Contact';
-import Pricing from './pages/Pricing';
-import Gallery from './pages/Gallery';
-import Schedule from './pages/Schedule';
-import Terms from './pages/Terms';
+
+const Home = React.lazy(() => import('./pages/Home'));
+const Programs = React.lazy(() => import('./pages/Programs'));
+const About = React.lazy(() => import('./pages/About'));
+const Reviews = React.lazy(() => import('./pages/Reviews'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const Pricing = React.lazy(() => import('./pages/Pricing'));
+const Gallery = React.lazy(() => import('./pages/Gallery'));
+const Schedule = React.lazy(() => import('./pages/Schedule'));
+const Terms = React.lazy(() => import('./pages/Terms'));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -37,20 +38,22 @@ const App: React.FC = () => {
     <Router>
       <ScrollToTop />
       <Layout>
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-            <Route path="/programs" element={<PageTransition><Programs /></PageTransition>} />
-            <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-            <Route path="/aboutus" element={<PageTransition><About /></PageTransition>} />
-            <Route path="/reviews" element={<PageTransition><Reviews /></PageTransition>} />
-            <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-            <Route path="/pricing" element={<PageTransition><Pricing /></PageTransition>} />
-            <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
-            <Route path="/schedule" element={<PageTransition><Schedule /></PageTransition>} />
-            <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
-            <Route path="/policy" element={<PageTransition><Terms /></PageTransition>} />
-          </Routes>
+        <AnimatePresence mode="wait" initial={false}>
+          <Suspense fallback={null}>
+            <Routes>
+              <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+              <Route path="/programs" element={<PageTransition><Programs /></PageTransition>} />
+              <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+              <Route path="/aboutus" element={<PageTransition><About /></PageTransition>} />
+              <Route path="/reviews" element={<PageTransition><Reviews /></PageTransition>} />
+              <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+              <Route path="/pricing" element={<PageTransition><Pricing /></PageTransition>} />
+              <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
+              <Route path="/schedule" element={<PageTransition><Schedule /></PageTransition>} />
+              <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
+              <Route path="/policy" element={<PageTransition><Terms /></PageTransition>} />
+            </Routes>
+          </Suspense>
         </AnimatePresence>
       </Layout>
     </Router>

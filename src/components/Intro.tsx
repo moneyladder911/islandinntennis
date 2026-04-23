@@ -24,7 +24,7 @@ const Intro: React.FC<{ showPage: (name: string) => void }> = ({ showPage }) => 
         >
           <div className="bg-[#1a3a2a] rounded-sm overflow-hidden shadow-2xl relative aspect-[4/3] border border-forest/10">
             <img 
-              src="/tennis-heart.jpg" 
+              src="/tennis-heart.avif" 
               alt="Aerial sunset view of Island Inn Tennis Club" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               loading="lazy"

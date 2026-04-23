@@ -30,7 +30,7 @@ const ContactPage: React.FC = () => {
               Let's <em className="italic text-gold font-normal">Get Playing</em>
             </h1>
             <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">
-              Ready to book a lesson or match? Text Kim or send us a message below. All availability updated for <em className="text-gold italic font-normal">Summer 2026</em>.
+              Ready to book a lesson or match? Text Kim or send us a message below. All availability updated for <em className="text-gold italic font-normal">Summer 2026</em>. Our season runs from May 16 to November 7.
             </p>
             <div className="w-12 h-[1px] bg-gold/30 mx-auto" />
           </motion.div>

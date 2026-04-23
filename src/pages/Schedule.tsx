@@ -56,7 +56,7 @@ const SchedulePage: React.FC = () => {
               All Levels. All Day. <em className="italic text-clay">All Summer.</em>
             </h2>
             <p className="text-light text-sm font-light max-w-lg mx-auto leading-[1.8]">
-              Our courts are active from sunrise to sunset. Kim organizes clinics, social matches, and open play daily — times rotate based on demand and weather.
+              Our season runs from May 16 to November 7. Our courts are active from sunrise to sunset. Kim organizes clinics, social matches, and open play daily — times rotate based on demand and weather.
             </p>
           </div>
 

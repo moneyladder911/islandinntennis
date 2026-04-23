@@ -16,8 +16,6 @@
 }
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -91,4 +89,32 @@
 
 .safe-area-bottom {
   padding-bottom: calc(1rem + env(safe-area-inset-bottom)) !important;
+}
+
+@keyframes hero-zoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-hero-zoom {
+  animation: hero-zoom 40s linear infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1.2s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fade-in 1s ease-out 1.5s forwards;
 }
