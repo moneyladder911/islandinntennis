@@ -36,8 +36,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[10px] font-bold tracking-[2px] uppercase text-gold mb-2">{method.title}</div>
-                    <div className="serif text-xl mb-1">
-                      <a href={method.link} target="_blank" className="text-white hover:text-gold no-underline transition-colors">{method.value}</a>
+                    <div className="serif text-[clamp(16px,4vw,20px)] mb-1 pr-4">
+                      <a href={method.link} target="_blank" className="text-white hover:text-gold no-underline transition-colors break-all sm:break-normal">{method.value}</a>
                     </div>
                     <div className="text-xs text-white/40">{method.note}</div>
                   </div>
