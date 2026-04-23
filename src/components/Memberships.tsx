@@ -15,7 +15,7 @@ const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
       tag: "The Island Choice",
       icon: <Star className="text-gold fill-gold" />,
       features: [
-        "Play FREE until November 1st",
+        "Play FREE until November 7th",
         "Play unlimited times",
         "Weekly Social Events",
         "Invite to Season Finals"
@@ -46,7 +46,7 @@ const Memberships: React.FC<MembershipsProps> = ({ isPreview = false }) => {
           <span className="text-[10px] font-bold tracking-[5px] uppercase text-gold mb-6 block">CORE OFFER</span>
           <h2 className="serif text-5xl md:text-6xl font-light leading-tight mb-8">2026 Summer <em className="italic text-clay font-normal">Memberships</em></h2>
           <p className="text-forest/60 text-lg font-light max-w-2xl mx-auto leading-relaxed">
-            The heart of Island Tennis. All seasonal offers are available through <em className="text-clay italic font-normal">November 1st, 2026</em>.
+            The heart of Island Tennis. All seasonal offers are available through <em className="text-clay italic font-normal">November 7th, 2026</em>.
           </p>
         </div>
 

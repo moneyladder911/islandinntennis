@@ -77,7 +77,7 @@ const PricingPage: React.FC = () => {
               Invest in Your <em className="italic text-gold font-normal">Summer</em> of <em className="italic text-gold font-normal">Tennis</em>
             </h1>
             <p className="text-white/60 font-light leading-[1.8] text-sm max-w-2xl mx-auto mb-8 text-center w-full">
-              Simple, transparent rates for the Vineyard's most welcoming club. Join us for a single set or a whole season—all offers available through <em className="text-gold italic font-normal">November 1st, 2026</em>.
+              Simple, transparent rates for the Vineyard's most welcoming club. Join us for a single set or a whole season—all offers available through <em className="text-gold italic font-normal">November 7th, 2026</em>.
             </p>
             <div className="w-12 h-[1px] bg-gold/30 mx-auto" />
           </motion.div>

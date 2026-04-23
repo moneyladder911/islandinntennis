@@ -22,7 +22,7 @@ const Terms: React.FC = () => {
     {
       icon: <FileText className="text-gold" />,
       title: "Membership Terms",
-      content: "2026 Summer Memberships are valid from May 1st through November 1st, 2026. Memberships are individual or family-specific and non-transferable. Resort access at the Island Inn is provided as a courtesy to regular season members."
+      content: "2026 Summer Memberships are valid from May 16th through November 7th, 2026. Memberships are individual or family-specific and non-transferable. Resort access at the Island Inn is provided as a courtesy to regular season members."
     }
   ];
 
