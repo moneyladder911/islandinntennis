@@ -13,9 +13,9 @@ const Contact: React.FC = () => {
   const faqs = [
     { q: "Do I need to bring my own racket?", a: "No! We have high-quality Head and Wilson rackets available for rental. However, you're always welcome to bring your own." },
     { q: "What skill level do I need?", a: "All skill levels are welcome! From your very first backhand to tournament-ready play, Kim will match you with the right program and partners." },
-    { q: "How do I book a court or lesson?", a: "The fastest way is to text Kim directly at +1 (508) 939-3030. You can also call the Island Inn main line or send us a message below." },
+    { q: "How do I book a court or lesson?", a: "The fastest way is to text Kim directly at +1 (407) 923-9047." },
     { q: "Is there parking available?", a: "Yes, there is ample free parking available behind Nomans Restaurant, directly adjacent to the tennis courts." },
-    { q: "Are lessons available year-round?", a: "Our main season runs from May through October. For off-season play, please contact us directly as availability varies based on island weather." },
+    { q: "Are lessons available year-round?", a: "Our main season runs from May through November. For off-season play, please contact us directly as availability varies based on island weather." },
     { q: "What should I wear?", a: "Comfortable athletic wear and proper tennis shoes (non-marking soles) are required on the courts. Please no sandals or smooth-soled street shoes." },
   ];
 
