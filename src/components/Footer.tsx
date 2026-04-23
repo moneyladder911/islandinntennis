@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="relative z-10 w-full lg:w-auto min-w-0 md:min-w-[420px]">
             <form 
-              action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
+              action="https://formspree.io/f/xjgjjekd" 
               method="POST" 
               className="flex flex-col md:flex-row gap-2 md:gap-0 group border border-white/10 overflow-hidden rounded-sm"
             >
