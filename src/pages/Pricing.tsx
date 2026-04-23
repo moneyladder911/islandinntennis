@@ -172,7 +172,7 @@ const PricingPage: React.FC = () => {
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                   <span className="text-xs font-bold uppercase tracking-widest text-white/50">Non-Members Drop-in</span>
-                  <span className="serif text-2xl text-gold">$20<small className="text-[10px] uppercase ml-1">/1.5h</small></span>
+                  <span className="serif text-2xl text-gold">$25<small className="text-[10px] uppercase ml-1">/1.5h</small></span>
                 </div>
               </div>
             </div>
