@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
       }}
     >
       {/* Background Image & Overlays */}
-      <div className="absolute inset-0 z-0 bg-forest overflow-hidden flex items-center justify-center">
-        <div className="w-full h-full max-w-[1600px] overflow-hidden -m-10 p-10">
+      <div className="absolute inset-0 z-0 bg-forest overflow-hidden">
+        <div className="w-full h-full overflow-hidden">
           <img
             src="/island-inn-real.avif"
             alt="Island Inn Tennis Courts Aerial View"
