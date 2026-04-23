@@ -17,12 +17,12 @@ const Terms: React.FC = () => {
     {
       icon: <AlertCircle className="text-gold" />,
       title: "Weather & Court Safety",
-      content: "Island Tennis reserves the right to close courts due to adverse weather or maintenance. Safety is our priority. If a session is rained out, we will proactively reschedule or provide a credit for future play."
+      content: "Safety is our priority. Island Inn Tennis reserves the right to close courts due to adverse weather or maintenance, and will notify you via text up to an hour before your match or court time if need be. If a session is rained out, we will proactively reschedule or provide a credit for future play."
     },
     {
       icon: <FileText className="text-gold" />,
       title: "Membership Terms",
-      content: "2026 Summer Memberships are valid from May 16th through November 7th, 2026. Memberships are individual or family-specific and non-transferable. Resort access at the Island Inn is provided as a courtesy to regular season members."
+      content: "2026 Summer Memberships are valid from May 16th through November 7th, 2026. Memberships are individual or family-specific and non-transferable."
     }
   ];
 
