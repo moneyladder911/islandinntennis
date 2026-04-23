@@ -13,6 +13,7 @@ const GalleryPage: React.FC = () => {
     { span: 'md:row-span-2', title: 'Nomans Garden View', url: '/gallery/nomans-garden.jpg', color: '#153d20', pos: 'center' },
     { span: '', title: 'Tennis Pro Shop', url: '/gallery/pro-shop.jpg', color: '#2a5a3a', pos: 'center' },
     { span: '', title: 'Island Matches', url: '/gallery/gallery-4.jpg', color: '#1a3a2a', pos: 'center' },
+    { span: '', title: 'Players at the Net', url: '/gallery/gallery-8.jpg', color: '#1a3a2a', pos: 'center 30%' },
   ];
 
   return (
