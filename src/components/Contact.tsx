@@ -49,24 +49,24 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className="bg-white p-12 md:p-20">
             <h3 className="serif text-4xl mb-12 font-light text-forest">Send Us a Message</h3>
-            <form className="space-y-6">
+            <form action="https://formspree.io/f/xjgjjekd" method="POST" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">First Name</label>
-                  <input type="text" className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="Jane" />
+                  <input type="text" name="First Name" required className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="Jane" />
                 </div>
                 <div>
                   <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">Last Name</label>
-                  <input type="text" className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="Smith" />
+                  <input type="text" name="Last Name" required className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="Smith" />
                 </div>
               </div>
               <div>
                 <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">Email Address</label>
-                <input type="email" className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="jane@example.com" />
+                <input type="email" name="Email Address" required className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all" placeholder="jane@example.com" />
               </div>
               <div>
                 <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">Program Interest</label>
-                <select className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all appearance-none cursor-pointer">
+                <select name="Program Interest" className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all appearance-none cursor-pointer">
                   <option>Select a program...</option>
                   <option>Private Lessons</option>
                   <option>Group Clinics</option>
@@ -78,10 +78,13 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">Message</label>
-                <textarea className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all min-h-[120px]" placeholder="Tell us about your experience level..."></textarea>
+                <textarea name="Message" required className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all min-h-[120px]" placeholder="Tell us about your experience level..."></textarea>
               </div>
-              <a href="sms:+15089393030" className="btn btn-primary w-full shadow-lg shadow-clay/20">Text Kim to Book</a>
-              <p className="text-[11px] text-light text-center">Texting Kim is the fastest way to reach us and book your session.</p>
+              <div className="flex flex-col gap-4">
+                <button type="submit" className="btn btn-primary w-full shadow-lg shadow-clay/20 border-none cursor-pointer">Submit Message</button>
+                <a href="sms:+14079239047" className="btn bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white w-full no-underline transition-colors text-center text-xs tracking-[3px]">Or Text Kim Directly Instead</a>
+              </div>
+              <p className="text-[11px] text-light text-center">Form submissions are sent directly to our email. We aim to reply within 24 hours.</p>
             </form>
           </div>
         </div>
