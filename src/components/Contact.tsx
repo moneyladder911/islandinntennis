@@ -1,7 +1,17 @@
-import React from 'react';
-import { Phone, Instagram, Facebook, MapPin, MessageSquare, ChevronDown, Mail } from 'lucide-react';
+import React, { useState } from 'react';
+import { Phone, Instagram, Facebook, MapPin, MessageSquare, ChevronDown, Mail, Check } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigator.clipboard.writeText('islandinntennismv@gmail.com').then(() => {
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    });
+  };
+
   const contactMethods = [
     { icon: <MessageSquare size={20} />, title: 'Text Kim - Fastest Way', value: '+1 (407) 923-9047', note: 'Text Kim directly - fast response', link: 'sms:+14079239047' },
     { icon: <Mail size={20} />, title: 'Email Us', value: 'islandinntennismv@gmail.com', note: 'For general inquiries and info', link: 'mailto:islandinntennismv@gmail.com' },
@@ -37,7 +47,22 @@ const Contact: React.FC = () => {
                   <div>
                     <div className="text-[10px] font-bold tracking-[2px] uppercase text-gold mb-2">{method.title}</div>
                     <div className="serif text-[clamp(16px,4vw,20px)] mb-1 pr-4">
-                      <a href={method.link} target="_blank" className="text-white hover:text-gold no-underline transition-colors break-all sm:break-normal">{method.value}</a>
+                      {i === 1 ? (
+                        <button
+                          onClick={handleCopyEmail}
+                          className="text-white hover:text-gold no-underline transition-colors break-all sm:break-normal bg-transparent border-none cursor-pointer p-0 font-[inherit] text-left flex items-center gap-2 serif text-[clamp(16px,4vw,20px)]"
+                          title="Click to copy email"
+                        >
+                          {method.value}
+                          <span className={`inline-flex items-center gap-1 text-[10px] tracking-widest uppercase transition-all duration-300 ${
+                            emailCopied ? 'opacity-100 text-gold' : 'opacity-0'
+                          }`}>
+                            <Check size={12} /> Copied!
+                          </span>
+                        </button>
+                      ) : (
+                        <a href={method.link} target="_blank" className="text-white hover:text-gold no-underline transition-colors break-all sm:break-normal">{method.value}</a>
+                      )}
                     </div>
                     <div className="text-xs text-white/40">{method.note}</div>
                   </div>
@@ -50,6 +75,7 @@ const Contact: React.FC = () => {
           <div className="bg-white p-12 md:p-20">
             <h3 className="serif text-4xl mb-12 font-light text-forest">Send Us a Message</h3>
             <form action="https://formspree.io/f/xjgjjekd" method="POST" className="space-y-6">
+              <input type="hidden" name="_next" value="https://islandinntennis.com/thank-you" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">First Name</label>
