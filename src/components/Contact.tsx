@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Phone, Instagram, Facebook, MapPin, MessageSquare, ChevronDown, Mail, Check } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const navigate = useNavigate();
   const [emailCopied, setEmailCopied] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -10,6 +14,30 @@ const Contact: React.FC = () => {
       setEmailCopied(true);
       setTimeout(() => setEmailCopied(false), 2000);
     });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setSubmitError(false);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://formspree.io/f/xjgjjekd', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      if (res.ok) {
+        navigate('/thank-you');
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const contactMethods = [
@@ -74,8 +102,7 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className="bg-white p-12 md:p-20">
             <h3 className="serif text-4xl mb-12 font-light text-forest">Send Us a Message</h3>
-            <form action="https://formspree.io/f/xjgjjekd" method="POST" className="space-y-6">
-              <input type="hidden" name="_next" value="https://islandinntennis.com/thank-you" />
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">First Name</label>
@@ -107,9 +134,18 @@ const Contact: React.FC = () => {
                 <textarea name="Message" required className="w-full p-4 bg-cream border-none focus:ring-1 focus:ring-clay outline-none transition-all min-h-[120px]" placeholder="Tell us about your experience level..."></textarea>
               </div>
               <div className="flex flex-col gap-4">
-                <button type="submit" className="btn btn-primary w-full shadow-lg shadow-clay/20 border-none cursor-pointer">Submit Message</button>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="btn btn-primary w-full shadow-lg shadow-clay/20 border-none cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {submitting ? 'Sending…' : 'Submit Message'}
+                </button>
                 <a href="sms:+14079239047" className="btn bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white w-full no-underline transition-colors text-center text-xs tracking-[3px]">Or Text Kim Directly Instead</a>
               </div>
+              {submitError && (
+                <p className="text-[11px] text-clay text-center">Something went wrong. Please try again or text Kim directly.</p>
+              )}
               <p className="text-[11px] text-light text-center">Form submissions are sent directly to our email. We aim to reply within 24 hours.</p>
             </form>
           </div>
