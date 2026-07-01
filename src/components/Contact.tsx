@@ -74,8 +74,7 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className="bg-white p-12 md:p-20">
             <h3 className="serif text-4xl mb-12 font-light text-forest">Send Us a Message</h3>
-            <form action="https://formspree.io/f/xjgjjekd" method="POST" className="space-y-6">
-              <input type="hidden" name="_next" value="https://islandinntennis.com/formthanks.html" />
+            <form action="/api/contact" method="POST" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-[10px] font-bold tracking-[2px] uppercase text-forest mb-2 block">First Name</label>
