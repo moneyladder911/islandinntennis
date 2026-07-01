@@ -21,14 +21,14 @@ const PricingPage: React.FC = () => {
     },
     {
       title: 'Group Clinics',
-      price: '$35',
-      period: 'starting from',
-      desc: 'High-energy drills with 4-8 players typically held weekday mornings.',
+      price: '$35–$40',
+      period: 'per clinic',
+      desc: 'High-energy drills with 4-8 players. Mornings and evenings throughout the week.',
       features: [
-        'Skills development',
-        'Drill-based learning',
+        '$35 for members',
+        '$40 for non-members',
+        'Skills & drill-based learning',
         'Social atmosphere',
-        'Standard equipment',
       ],
       popular: true,
       cta: 'Join Clinic'

@@ -7,6 +7,7 @@ const Intro = React.lazy(() => import('../components/Intro'));
 const Programs = React.lazy(() => import('../components/Programs'));
 const Reviews = React.lazy(() => import('../components/Reviews'));
 const Memberships = React.lazy(() => import('../components/Memberships'));
+const NewsSection = React.lazy(() => import('../components/NewsSection'));
 const SchedulePreview = React.lazy(() => import('../components/SchedulePreview'));
 
 const Home: React.FC = () => {
@@ -36,6 +37,7 @@ const Home: React.FC = () => {
         <Suspense fallback={<div className="h-96" />}>
           <Intro showPage={showPage} />
           <SchedulePreview />
+          <NewsSection />
           <Memberships isPreview={true} />
           <Programs isPreview={true} showPage={showPage} />
           <Reviews isPreview={true} showPage={showPage} />
