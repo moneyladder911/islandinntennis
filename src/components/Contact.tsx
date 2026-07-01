@@ -22,18 +22,26 @@ const Contact: React.FC = () => {
     setSubmitError(false);
     const form = e.currentTarget;
     const data = new FormData(form);
+    const json: Record<string, string> = {};
+    data.forEach((value, key) => { json[key] = value.toString(); });
     try {
       const res = await fetch('https://formspree.io/f/xjgjjekd', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(json),
       });
       if (res.ok) {
-        navigate('/thank-you');
+        window.location.href = '/thank-you';
       } else {
+        const body = await res.json().catch(() => ({}));
+        console.error('Formspree error:', res.status, body);
         setSubmitError(true);
       }
-    } catch {
+    } catch (err) {
+      console.error('Form submission error:', err);
       setSubmitError(true);
     } finally {
       setSubmitting(false);
@@ -144,7 +152,10 @@ const Contact: React.FC = () => {
                 <a href="sms:+14079239047" className="btn bg-transparent border border-forest/10 text-forest hover:bg-forest hover:text-white w-full no-underline transition-colors text-center text-xs tracking-[3px]">Or Text Kim Directly Instead</a>
               </div>
               {submitError && (
-                <p className="text-[11px] text-clay text-center">Something went wrong. Please try again or text Kim directly.</p>
+                <div className="bg-red-50 border border-red-200 rounded p-4 text-center">
+                  <p className="text-sm font-semibold text-red-700 mb-1">Submission failed</p>
+                  <p className="text-xs text-red-600">Please try again, or <a href="sms:+14079239047" className="underline font-bold">text Kim directly</a>.</p>
+                </div>
               )}
               <p className="text-[11px] text-light text-center">Form submissions are sent directly to our email. We aim to reply within 24 hours.</p>
             </form>
