@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     });
 
     if (response.ok) {
-      res.redirect(302, '/thank-you');
+      res.redirect(302, '/newsletter-thanks');
     } else {
       res.redirect(302, '/');
     }

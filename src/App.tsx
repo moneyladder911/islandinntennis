@@ -13,6 +13,7 @@ const Gallery = React.lazy(() => import('./pages/Gallery'));
 const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Terms = React.lazy(() => import('./pages/Terms'));
 const ThankYou = React.lazy(() => import('./pages/ThankYou'));
+const NewsletterThanks = React.lazy(() => import('./pages/NewsletterThanks'));
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -54,6 +55,7 @@ const App: React.FC = () => {
               <Route path="/terms" element={<PageTransition><Terms /></PageTransition>} />
               <Route path="/policy" element={<PageTransition><Terms /></PageTransition>} />
               <Route path="/thank-you" element={<PageTransition><ThankYou /></PageTransition>} />
+              <Route path="/newsletter-thanks" element={<PageTransition><NewsletterThanks /></PageTransition>} />
             </Routes>
           </Suspense>
         </AnimatePresence>
